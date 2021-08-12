@@ -1,0 +1,25 @@
+version: 2
+
+models:
+    - name: dim_salesperson
+      description: Tabela dimensão salesperson
+      columns:
+          - name: salesperson_sk
+            description: A chave surrogate da tabela salesperson
+            tests:
+                - unique
+                - not_null          
+          - name: salesperson_id
+            description: A chave primária da tabela salesperson
+          - name: territoryid
+            description: A chave estrangeira da tabela territory            
+          - name: salesquota
+            description: A cota de vendas da tabela salesperson            
+          - name: bonus
+            description: O bonus da tabela salesperson
+          - name: commissionpct
+            description: O percentual de comissão tabela salesperson
+          - name: salesytd
+            description: Vendas ontem da tabela salesperson                                    
+          - name: saleslastyear
+            description: Ultimas vendas no ano tabela salesperson  

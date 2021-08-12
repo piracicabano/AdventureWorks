@@ -1,0 +1,55 @@
+version: 2
+
+sources:
+  - name: adventureworks_etl
+    description: Essa é a fonte de dados do nosso ERP, criada através do Stitch
+    tables:
+      - name: product
+        description: Essa é a tabela de produtos do ERP.
+
+      - name: creditcard
+        description: Essa é a tabela de cartao de credito do ERP.
+        
+      - name: customer
+        description: Essa é a tabela de clientes do ERP. O dono desse dado é a equipe comercial.
+
+      - name: salesorderheader
+        description: Essa é a tabela principal de pedidos do ERP. O dono desse dado é a equipe comercial.
+
+      - name: salesorderdetail
+        description: Essa é a tabela de itens dos pedidos do ERP. O dono desse dado é a equipe comercial.
+
+      - name: salesreason
+        description: Essa é a tabela de razão de compra dos pedidos do ERP. 
+       
+      - name: countryregion
+        description: Essa é a tabela de país do ERP.        
+
+      - name: address
+        description: Essa é a tabela de cidade do ERP.  
+
+      - name: salesperson
+        description: Essa é a tabela de vendedor do ERP.         
+
+      - name: stateprovincy
+        description: Essa é a tabela de estado do ERP.  
+
+      - name: person
+        description: Essa é a tabela de pessoa do ERP.  
+
+      - name: employee
+        description: Essa é a tabela de funcionário do ERP.  
+
+      - name: store
+        description: Essa é a tabela de loja do ERP.                
+
+      - name: salesterritory
+        description: Essa é a tabela de territorio de vendas do ERP.    
+
+      - name: salesorderheadersalesreason
+        description: Essa é a tabela que relaciona SalesReason com SalesOrderReason  
+
+      - name: personcreditcard
+        description: Essa é a tabela que relaciona CreditCard com Person
+
+                         

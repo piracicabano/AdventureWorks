@@ -1,0 +1,17 @@
+version: 2
+
+models:
+    - name: dim_salesreason
+      description: Tabela dimensão salesreason
+      columns:
+          - name: salesreason_sk
+            description: A chave surrogate da tabela salesreason
+            tests:
+                - unique
+                - not_null  
+          - name: salesreason_id
+            description: A chave primária da tabela salesreason
+          - name: name
+            description: O nome do vendedor da tabela salesreason
+          - name: reasontype
+            description: A razão da venda da tabela salesreason                        

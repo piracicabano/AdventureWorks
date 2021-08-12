@@ -1,0 +1,53 @@
+version: 2
+
+models:
+    - name: dim_product
+      description: Tabela dimensão product
+      columns:
+          - name: product_sk
+            description: A chave surrogate da tabela product
+            tests:
+                - unique
+                - not_null 
+          - name: product_id
+            description: A chave primária da tabela product
+          - name: name
+            description: O nome do produto da tabela product
+          - name: productnumber
+            description: O número do produto da tabela product
+          - name: makeflag
+            description: A flag de fabricado da tabela product                                    
+          - name: finishedgoodsflag
+            description: O campo de bens acabados da tabela product            
+          - name: color
+            description: A cor do produto da tabela product
+          - name: safetystocklevel
+            description: O estoque mínimo do produto da tabela product
+          - name: reorderpoint
+            description: Ponto de reordenar da tabela product                                    
+          - name: standardcost
+            description: Custo padrão da tabela product   
+          - name: listprice
+            description: É a lista de preço da tabela product
+          - name: size
+            description: O tamanho do produto da tabela product
+          - name: sizeunitmeasurecode
+            description: Tamanho unitário da tabela product                                    
+          - name: weightunitmeasurecode
+            description: Peso unitário da tabela product    
+          - name: weight
+            description: Peso da tabela product   
+          - name: daystomanufacture
+            description: É o campo dias para manufaturar da tabela product
+          - name: productline
+            description: É o campo linha de produto da tabela product
+          - name: class
+            description: É o campo classe da tabela product                                    
+          - name: productsubcategoryid
+            description: É a chave estrangeira de sub-categoria da tabela product    
+          - name: productmodelid
+            description: É a chave estrangeira do modelo da tabela product
+          - name: sellstartdate
+            description: É data inicial de vendas da tabela product    
+          - name: productmodelid
+            description: É a data de venda da tabela product

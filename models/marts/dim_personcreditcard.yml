@@ -1,0 +1,20 @@
+version: 2
+
+models:
+    - name: dim_personcreditcard
+      description: Tabela dimensão personcreditcard
+      columns:
+          - name: creditcard_sk
+            description: A chave surrogate da tabela creditcard
+            tests:
+                - unique
+                - not_null 
+          - name: person_sk
+            description: A chave surrogate da tabela person
+            tests:
+                - unique
+                - not_null                 
+          - name: creditcard_id
+            description: A chave primária da tabela creditcard
+          - name: person_id
+            description: A chave primária da tabela creditcard  
