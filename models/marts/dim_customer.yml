@@ -1,0 +1,19 @@
+version: 2
+
+models:
+    - name: dim_customer
+      description: Tabela dimensão customer
+      columns:
+          - name: customer_sk
+            description: A chave surrogate da tabela customer
+            tests:
+                - unique
+                - not_null
+          - name: customer_id
+            description: A chave natural da tabela customer
+          - name: personid
+            description: A chave estrangeira da tabela person
+          - name: storeid
+            description: A chave estrangeira da tabela store
+          - name: territoryid
+            description: A chave estrangeira da tabela customer   

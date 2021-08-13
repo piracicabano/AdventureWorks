@@ -1,0 +1,25 @@
+version: 2
+
+models:
+    - name: dim_person
+      description: Tabela dimensão person
+      columns:
+          - name: person_sk
+            description: A chave surrogate da tabela person
+            tests:
+                - unique
+                - not_null    
+          - name: namestyle
+            description: É o estilo de nome da pessoa na tabela person
+          - name: title
+            description: É o título da pessoa na tabela person
+          - name: firstname
+            description: É o primeiro nome da pessoa na tabela person
+          - name: middlename
+            description: É o nome do meio da pessoa na tabela person
+          - name: lastname
+            description: É o sobrenome da pessoa na tabela person
+          - name: suffix
+            description: É o sufixo da pessoa na tabela person
+          - name: emailpromotion
+            description: É a promoção de email da pessoa na tabela person

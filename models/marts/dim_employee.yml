@@ -1,0 +1,37 @@
+version: 2
+
+models:
+    - name: dim_employee
+      description: Tabela dimensão employee
+      columns:
+          - name: employee_sk
+            description: A chave surrogate da tabela employee
+            tests:
+                - unique
+                - not_null
+          - name: employee_id
+            description: A chave primária da tabela employee
+          - name: nationalidnumber
+            description: É o id nacional da tabela employee                                   
+          - name: loginid
+            description: É o ide de login da tabela employee
+          - name: jobtitle
+            description: É o cargo da tabela employee
+          - name: birthdate
+            description: É a data de nascimento da tabela employee
+          - name: maritalstatus
+            description: É o estado civil da tabela employee
+          - name: gender
+            description: É o sexo da tabela employee                                                            
+          - name: hiredate
+            description: É a data de admissão da tabela employee
+          - name: salariedflag
+            description: É o flag de assalariado da tabela employee
+          - name: vacationhours
+            description: São as horas de férias da tabela employee
+          - name: sickleavehours
+            description: São as horas de licença medica da tabela employee
+          - name: currentflag
+            description: É a bandeira corrente da tabela employee 
+          - name: organizationnode
+            description: É o nó da organizacao da tabela employee             

@@ -1,0 +1,17 @@
+version: 2
+
+models:
+    - name: dim_store
+      description: Tabela dimensão store
+      columns:
+          - name: store_sk
+            description: A chave surrogate da tabela store
+            tests:
+                - unique
+                - not_null                             
+          - name: store_id
+            description: A chave primária da tabela store
+          - name: name
+            description: O campo nome na tabela store
+          - name: salespersonid
+            description: A chave estrangeira da tabela salesperson     

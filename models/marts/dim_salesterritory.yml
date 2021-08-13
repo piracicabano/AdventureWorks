@@ -1,0 +1,25 @@
+version: 2
+
+models:
+    - name: dim_salesterritory
+      description: Tabela dimensão salesterritory
+      columns:
+          - name: territory_sk
+            description: A chave surrogate da tabela salesterritory
+            tests:
+                - unique
+                - not_null   
+          - name: territory_id
+            description: A chave primária da tabela salesterritory
+          - name: name
+            description: O nome na tabela salesterritory
+          - name: countryregioncode
+            description: O codigo da regiao na tabela salesterritory
+          - name: salesytd
+            description: São as vendas ontem na tabela salesterritory                                    
+          - name: saleslastyear
+            description: As vendas no ultimo ano na tabela salesterritory            
+          - name: costytd
+            description: O custo ontem na tabela salesterritory            
+          - name: costlastyear
+            description: O custo no último ano na tabela salesterritory  
