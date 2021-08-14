@@ -10097,3 +10097,1304 @@ Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
 2021-08-14 18:55:05.206793 (Thread-8): handling status request
 2021-08-14 18:55:05.208301 (Thread-8): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f9eb221c-76cb-490c-90fc-c4935d5c4f2c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f87ec5d2310>]}
 2021-08-14 18:55:05.209212 (Thread-8): sending response (<Response 16686 bytes [200 OK]>) to 10.0.40.254
+2021-08-14 18:55:10.582223 (MainThread): Connection 'test.adventureworks_etl.test_order_quantity' was properly closed.
+2021-08-14 18:55:10.598768 (Thread-9): Parsing macros/adapters.sql
+2021-08-14 18:55:10.616270 (Thread-9): Parsing macros/etc.sql
+2021-08-14 18:55:10.618207 (Thread-9): Parsing macros/catalog.sql
+2021-08-14 18:55:10.623722 (Thread-9): Parsing macros/materializations/copy.sql
+2021-08-14 18:55:10.627858 (Thread-9): Parsing macros/materializations/table.sql
+2021-08-14 18:55:10.636907 (Thread-9): Parsing macros/materializations/incremental.sql
+2021-08-14 18:55:10.648100 (Thread-9): Parsing macros/materializations/seed.sql
+2021-08-14 18:55:10.650600 (Thread-9): Parsing macros/materializations/snapshot.sql
+2021-08-14 18:55:10.652273 (Thread-9): Parsing macros/materializations/view.sql
+2021-08-14 18:55:10.655489 (Thread-9): Parsing macros/core.sql
+2021-08-14 18:55:10.659052 (Thread-9): Parsing macros/materializations/helpers.sql
+2021-08-14 18:55:10.667361 (Thread-9): Parsing macros/materializations/common/merge.sql
+2021-08-14 18:55:10.680061 (Thread-9): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-08-14 18:55:10.681744 (Thread-9): Parsing macros/materializations/snapshot/strategies.sql
+2021-08-14 18:55:10.697726 (Thread-9): Parsing macros/materializations/snapshot/snapshot.sql
+2021-08-14 18:55:10.726439 (Thread-9): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-08-14 18:55:10.730917 (Thread-9): Parsing macros/materializations/view/view.sql
+2021-08-14 18:55:10.736518 (Thread-9): Parsing macros/materializations/seed/seed.sql
+2021-08-14 18:55:10.755440 (Thread-9): Parsing macros/materializations/table/table.sql
+2021-08-14 18:55:10.761400 (Thread-9): Parsing macros/materializations/incremental/helpers.sql
+2021-08-14 18:55:10.763089 (Thread-9): Parsing macros/materializations/incremental/incremental.sql
+2021-08-14 18:55:10.768647 (Thread-9): Parsing macros/etc/is_incremental.sql
+2021-08-14 18:55:10.770222 (Thread-9): Parsing macros/etc/query.sql
+2021-08-14 18:55:10.771237 (Thread-9): Parsing macros/etc/datetime.sql
+2021-08-14 18:55:10.779269 (Thread-9): Parsing macros/etc/get_custom_alias.sql
+2021-08-14 18:55:10.780173 (Thread-9): Parsing macros/etc/get_custom_database.sql
+2021-08-14 18:55:10.781736 (Thread-9): Parsing macros/etc/get_custom_schema.sql
+2021-08-14 18:55:10.783562 (Thread-9): Parsing macros/schema_tests/not_null.sql
+2021-08-14 18:55:10.785041 (Thread-9): Parsing macros/schema_tests/accepted_values.sql
+2021-08-14 18:55:10.787560 (Thread-9): Parsing macros/schema_tests/relationships.sql
+2021-08-14 18:55:10.789349 (Thread-9): Parsing macros/schema_tests/unique.sql
+2021-08-14 18:55:10.790974 (Thread-9): Parsing macros/adapters/common.sql
+2021-08-14 18:55:11.007486 (Thread-9): Acquiring new bigquery connection "model.adventureworks_etl.stg_salesorderheader".
+2021-08-14 18:55:11.013255 (Thread-9): Acquiring new bigquery connection "model.adventureworks_etl.stg_salesorderheadersalesreason".
+2021-08-14 18:55:11.018677 (Thread-9): Acquiring new bigquery connection "model.adventureworks_etl.stg_store".
+2021-08-14 18:55:11.024024 (Thread-9): Acquiring new bigquery connection "model.adventureworks_etl.stg_product".
+2021-08-14 18:55:11.030053 (Thread-9): Acquiring new bigquery connection "model.adventureworks_etl.stg_salesorderdetail".
+2021-08-14 18:55:11.035152 (Thread-9): Acquiring new bigquery connection "model.adventureworks_etl.stg_person".
+2021-08-14 18:55:11.040322 (Thread-9): Acquiring new bigquery connection "model.adventureworks_etl.stg_salesperson".
+2021-08-14 18:55:11.045583 (Thread-9): Acquiring new bigquery connection "model.adventureworks_etl.stg_customer".
+2021-08-14 18:55:11.050851 (Thread-9): Acquiring new bigquery connection "model.adventureworks_etl.stg_employee".
+2021-08-14 18:55:11.055818 (Thread-9): Acquiring new bigquery connection "model.adventureworks_etl.stg_salesreason".
+2021-08-14 18:55:11.061272 (Thread-9): Acquiring new bigquery connection "model.adventureworks_etl.stg_salesterritory".
+2021-08-14 18:55:11.066895 (Thread-9): Acquiring new bigquery connection "model.adventureworks_etl.stg_personcreditcard".
+2021-08-14 18:55:11.071920 (Thread-9): Acquiring new bigquery connection "model.adventureworks_etl.dim_product".
+2021-08-14 18:55:11.077146 (Thread-9): Acquiring new bigquery connection "model.adventureworks_etl.dim_store".
+2021-08-14 18:55:11.082364 (Thread-9): Acquiring new bigquery connection "model.adventureworks_etl.fact_salesorderdetail".
+2021-08-14 18:55:11.090055 (Thread-9): Acquiring new bigquery connection "model.adventureworks_etl.dim_salesperson".
+2021-08-14 18:55:11.095270 (Thread-9): Acquiring new bigquery connection "model.adventureworks_etl.dim_person".
+2021-08-14 18:55:11.101066 (Thread-9): Acquiring new bigquery connection "model.adventureworks_etl.dim_customer".
+2021-08-14 18:55:11.106552 (Thread-9): Acquiring new bigquery connection "model.adventureworks_etl.dim_personcreditcard".
+2021-08-14 18:55:11.111842 (Thread-9): Acquiring new bigquery connection "model.adventureworks_etl.dim_salesterritory".
+2021-08-14 18:55:11.117066 (Thread-9): Acquiring new bigquery connection "model.adventureworks_etl.dim_salesreason".
+2021-08-14 18:55:11.122185 (Thread-9): Acquiring new bigquery connection "model.adventureworks_etl.dim_employee".
+2021-08-14 18:55:11.129142 (Thread-9): Acquiring new bigquery connection "test.adventureworks_etl.test_product_quantity".
+2021-08-14 18:55:11.134418 (Thread-9): Acquiring new bigquery connection "test.adventureworks_etl.test_order_quantity".
+2021-08-14 18:55:11.328029 (Thread-10): handling status request
+2021-08-14 18:55:11.328484 (Thread-10): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f9eb221c-76cb-490c-90fc-c4935d5c4f2c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f87ec0b2a90>]}
+2021-08-14 18:55:11.328966 (Thread-10): sending response (<Response 185 bytes [200 OK]>) to 10.0.40.254
+2021-08-14 18:55:11.371537 (Thread-9): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f9eb221c-76cb-490c-90fc-c4935d5c4f2c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f87ec25dd90>]}
+2021-08-14 18:55:11.379063 (Thread-11): handling status request
+2021-08-14 18:55:11.379259 (Thread-11): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f9eb221c-76cb-490c-90fc-c4935d5c4f2c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f87ec231550>]}
+2021-08-14 18:55:11.380042 (Thread-11): sending response (<Response 16749 bytes [200 OK]>) to 10.0.9.228
+2021-08-14 18:55:11.439135 (Thread-12): handling status request
+2021-08-14 18:55:11.439354 (Thread-12): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f9eb221c-76cb-490c-90fc-c4935d5c4f2c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f87ec231580>]}
+2021-08-14 18:55:11.440167 (Thread-12): sending response (<Response 16749 bytes [200 OK]>) to 10.0.25.152
+2021-08-14 18:55:12.887453 (Thread-13): handling status request
+2021-08-14 18:55:12.887744 (Thread-13): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f9eb221c-76cb-490c-90fc-c4935d5c4f2c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f87ec216fd0>]}
+2021-08-14 18:55:12.888692 (Thread-13): sending response (<Response 16749 bytes [200 OK]>) to 10.0.24.167
+2021-08-14 18:55:20.621978 (Thread-14): handling status request
+2021-08-14 18:55:20.622338 (Thread-14): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f9eb221c-76cb-490c-90fc-c4935d5c4f2c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f87ec26a5e0>]}
+2021-08-14 18:55:20.623292 (Thread-14): sending response (<Response 16749 bytes [200 OK]>) to 10.0.19.71
+2021-08-14 18:55:20.847900 (Thread-15): handling status request
+2021-08-14 18:55:20.848183 (Thread-15): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f9eb221c-76cb-490c-90fc-c4935d5c4f2c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f87ec219640>]}
+2021-08-14 18:55:20.849109 (Thread-15): sending response (<Response 16749 bytes [200 OK]>) to 10.0.34.201
+2021-08-14 18:55:20.949782 (Thread-16): handling cli_args request
+2021-08-14 18:55:20.950046 (Thread-16): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f9eb221c-76cb-490c-90fc-c4935d5c4f2c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f87ec234a30>]}
+2021-08-14 18:55:20.959785 (Thread-16): Connection 'test.adventureworks_etl.test_order_quantity' was properly closed.
+2021-08-14 18:55:22.598621 (Thread-16): sending response (<Response 138 bytes [200 OK]>) to 10.0.27.22
+2021-08-14 18:55:22.633303 (MainThread): Partial parsing not enabled
+2021-08-14 18:55:22.636030 (MainThread): Parsing macros/adapters.sql
+2021-08-14 18:55:22.654456 (MainThread): Parsing macros/etc.sql
+2021-08-14 18:55:22.656460 (MainThread): Parsing macros/catalog.sql
+2021-08-14 18:55:22.662049 (MainThread): Parsing macros/materializations/copy.sql
+2021-08-14 18:55:22.666238 (MainThread): Parsing macros/materializations/table.sql
+2021-08-14 18:55:22.675853 (MainThread): Parsing macros/materializations/incremental.sql
+2021-08-14 18:55:22.687072 (MainThread): Parsing macros/materializations/seed.sql
+2021-08-14 18:55:22.689595 (MainThread): Parsing macros/materializations/snapshot.sql
+2021-08-14 18:55:22.691322 (MainThread): Parsing macros/materializations/view.sql
+2021-08-14 18:55:22.694568 (MainThread): Parsing macros/core.sql
+2021-08-14 18:55:22.698152 (MainThread): Parsing macros/materializations/helpers.sql
+2021-08-14 18:55:22.706572 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-08-14 18:55:22.719442 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-08-14 18:55:22.721157 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-08-14 18:55:22.737145 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-08-14 18:55:22.765655 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-08-14 18:55:22.770158 (MainThread): Parsing macros/materializations/view/view.sql
+2021-08-14 18:55:22.775838 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-08-14 18:55:22.794521 (MainThread): Parsing macros/materializations/table/table.sql
+2021-08-14 18:55:22.800492 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-08-14 18:55:22.802229 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-08-14 18:55:22.807638 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-08-14 18:55:22.809192 (MainThread): Parsing macros/etc/query.sql
+2021-08-14 18:55:22.810248 (MainThread): Parsing macros/etc/datetime.sql
+2021-08-14 18:55:22.818378 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-08-14 18:55:22.819318 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-08-14 18:55:22.820921 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-08-14 18:55:22.822798 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-08-14 18:55:22.824257 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-08-14 18:55:22.826782 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-08-14 18:55:22.828557 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-08-14 18:55:22.830255 (MainThread): Parsing macros/adapters/common.sql
+2021-08-14 18:55:22.876310 (MainThread): Partial parsing not enabled
+2021-08-14 18:55:22.980647 (Thread-17): handling poll request
+2021-08-14 18:55:22.980927 (Thread-17): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f9eb221c-76cb-490c-90fc-c4935d5c4f2c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f87ec23e790>]}
+2021-08-14 18:55:22.982157 (Thread-17): sending response (<Response 9619 bytes [200 OK]>) to 10.0.44.74
+2021-08-14 18:55:23.051447 (MainThread): Acquiring new bigquery connection "model.adventureworks_etl.stg_salesorderheader".
+2021-08-14 18:55:23.063224 (MainThread): Acquiring new bigquery connection "model.adventureworks_etl.stg_salesorderheadersalesreason".
+2021-08-14 18:55:23.069524 (MainThread): Acquiring new bigquery connection "model.adventureworks_etl.stg_store".
+2021-08-14 18:55:23.075445 (MainThread): Acquiring new bigquery connection "model.adventureworks_etl.stg_product".
+2021-08-14 18:55:23.080686 (MainThread): Acquiring new bigquery connection "model.adventureworks_etl.stg_salesorderdetail".
+2021-08-14 18:55:23.086624 (MainThread): Acquiring new bigquery connection "model.adventureworks_etl.stg_person".
+2021-08-14 18:55:23.091889 (MainThread): Acquiring new bigquery connection "model.adventureworks_etl.stg_salesperson".
+2021-08-14 18:55:23.097177 (MainThread): Acquiring new bigquery connection "model.adventureworks_etl.stg_customer".
+2021-08-14 18:55:23.102745 (MainThread): Acquiring new bigquery connection "model.adventureworks_etl.stg_employee".
+2021-08-14 18:55:23.108387 (MainThread): Acquiring new bigquery connection "model.adventureworks_etl.stg_salesreason".
+2021-08-14 18:55:23.113800 (MainThread): Acquiring new bigquery connection "model.adventureworks_etl.stg_salesterritory".
+2021-08-14 18:55:23.119598 (MainThread): Acquiring new bigquery connection "model.adventureworks_etl.stg_personcreditcard".
+2021-08-14 18:55:23.125157 (MainThread): Acquiring new bigquery connection "model.adventureworks_etl.dim_product".
+2021-08-14 18:55:23.131178 (MainThread): Acquiring new bigquery connection "model.adventureworks_etl.dim_store".
+2021-08-14 18:55:23.136986 (MainThread): Acquiring new bigquery connection "model.adventureworks_etl.fact_salesorderdetail".
+2021-08-14 18:55:23.145240 (MainThread): Acquiring new bigquery connection "model.adventureworks_etl.dim_salesperson".
+2021-08-14 18:55:23.150610 (MainThread): Acquiring new bigquery connection "model.adventureworks_etl.dim_person".
+2021-08-14 18:55:23.156641 (MainThread): Acquiring new bigquery connection "model.adventureworks_etl.dim_customer".
+2021-08-14 18:55:23.162213 (MainThread): Acquiring new bigquery connection "model.adventureworks_etl.dim_personcreditcard".
+2021-08-14 18:55:23.168122 (MainThread): Acquiring new bigquery connection "model.adventureworks_etl.dim_salesterritory".
+2021-08-14 18:55:23.173932 (MainThread): Acquiring new bigquery connection "model.adventureworks_etl.dim_salesreason".
+2021-08-14 18:55:23.179106 (MainThread): Acquiring new bigquery connection "model.adventureworks_etl.dim_employee".
+2021-08-14 18:55:23.193749 (MainThread): Acquiring new bigquery connection "test.adventureworks_etl.test_product_quantity".
+2021-08-14 18:55:23.199694 (MainThread): Acquiring new bigquery connection "test.adventureworks_etl.test_order_quantity".
+2021-08-14 18:55:23.499331 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '83f644fb-d272-4902-809c-41c6695e0097', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f54e73d9760>]}
+2021-08-14 18:55:23.546616 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '83f644fb-d272-4902-809c-41c6695e0097', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f54e7423910>]}
+2021-08-14 18:55:23.546858 (MainThread): Found 22 models, 22 tests, 0 snapshots, 0 analyses, 156 macros, 0 operations, 1 seed file, 16 sources, 0 exposures
+2021-08-14 18:55:23.549160 (MainThread): 
+2021-08-14 18:55:23.549440 (MainThread): Acquiring new bigquery connection "master".
+2021-08-14 18:55:23.551083 (ThreadPoolExecutor-0_0): Acquiring new bigquery connection "list_cursoanalytics-318700".
+2021-08-14 18:55:23.551203 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-08-14 18:55:23.718168 (ThreadPoolExecutor-1_0): Acquiring new bigquery connection "list_cursoanalytics-318700_dbt_jrgseverino".
+2021-08-14 18:55:23.718281 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2021-08-14 18:55:23.919514 (MainThread): 18:55:23 | Concurrency: 1 threads (target='default')
+2021-08-14 18:55:23.919643 (MainThread): 18:55:23 | 
+2021-08-14 18:55:23.921698 (Thread-1): Began running node model.adventureworks_etl.stg_customer
+2021-08-14 18:55:23.921930 (Thread-1): 18:55:23 | 1 of 22 START view model dbt_jrgseverino.stg_customer................ [RUN]
+2021-08-14 18:55:23.922128 (Thread-1): Acquiring new bigquery connection "model.adventureworks_etl.stg_customer".
+2021-08-14 18:55:23.922318 (Thread-1): Compiling model.adventureworks_etl.stg_customer
+2021-08-14 18:55:23.924409 (Thread-1): Writing injected SQL for node "model.adventureworks_etl.stg_customer"
+2021-08-14 18:55:23.945148 (Thread-1): finished collecting timing info
+2021-08-14 18:55:23.969091 (Thread-1): Writing runtime SQL for node "model.adventureworks_etl.stg_customer"
+2021-08-14 18:55:23.983651 (Thread-1): Opening a new connection, currently in state closed
+2021-08-14 18:55:23.987903 (Thread-1): On model.adventureworks_etl.stg_customer: /* {"app": "dbt", "dbt_version": "0.19.2", "profile_name": "user", "target_name": "default", "node_id": "model.adventureworks_etl.stg_customer"} */
+
+
+  create or replace view `cursoanalytics-318700`.`dbt_jrgseverino`.`stg_customer`
+  OPTIONS()
+  as with dados_fonte as (
+    select
+    customerid
+    , personid
+    , storeid
+    , territoryid
+    from `cursoanalytics-318700`.`adventureworks_etl`.`customer`
+)
+
+select * from dados_fonte;
+
+
+2021-08-14 18:55:24.937275 (Thread-1): finished collecting timing info
+2021-08-14 18:55:24.937661 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '83f644fb-d272-4902-809c-41c6695e0097', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f54e2dacbe0>]}
+2021-08-14 18:55:24.937954 (Thread-1): 18:55:24 | 1 of 22 OK created view model dbt_jrgseverino.stg_customer........... [OK in 1.02s]
+2021-08-14 18:55:24.938029 (Thread-1): Finished running node model.adventureworks_etl.stg_customer
+2021-08-14 18:55:24.938135 (Thread-1): Began running node model.adventureworks_etl.stg_employee
+2021-08-14 18:55:24.938277 (Thread-1): 18:55:24 | 2 of 22 START view model dbt_jrgseverino.stg_employee................ [RUN]
+2021-08-14 18:55:24.938469 (Thread-1): Acquiring new bigquery connection "model.adventureworks_etl.stg_employee".
+2021-08-14 18:55:24.938537 (Thread-1): Compiling model.adventureworks_etl.stg_employee
+2021-08-14 18:55:24.940580 (Thread-1): Writing injected SQL for node "model.adventureworks_etl.stg_employee"
+2021-08-14 18:55:24.957324 (Thread-1): finished collecting timing info
+2021-08-14 18:55:24.960827 (Thread-1): Writing runtime SQL for node "model.adventureworks_etl.stg_employee"
+2021-08-14 18:55:24.976393 (Thread-1): Opening a new connection, currently in state closed
+2021-08-14 18:55:24.980780 (Thread-1): On model.adventureworks_etl.stg_employee: /* {"app": "dbt", "dbt_version": "0.19.2", "profile_name": "user", "target_name": "default", "node_id": "model.adventureworks_etl.stg_employee"} */
+
+
+  create or replace view `cursoanalytics-318700`.`dbt_jrgseverino`.`stg_employee`
+  OPTIONS()
+  as with dados_fonte as (
+    select
+    businessentityid
+    , nationalidnumber
+    , loginid
+    , jobtitle
+    , birthdate
+    , maritalstatus
+    , gender
+    , hiredate
+    , salariedflag
+    , vacationhours
+    , sickleavehours
+    , currentflag
+    , organizationnode
+    from `cursoanalytics-318700`.`adventureworks_etl`.`employee`
+)
+
+select * from dados_fonte;
+
+
+2021-08-14 18:55:25.068497 (Thread-18): handling poll request
+2021-08-14 18:55:25.068784 (Thread-18): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f9eb221c-76cb-490c-90fc-c4935d5c4f2c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f87ec241340>]}
+2021-08-14 18:55:25.069808 (Thread-18): sending response (<Response 21501 bytes [200 OK]>) to 10.0.34.201
+2021-08-14 18:55:25.830150 (Thread-1): finished collecting timing info
+2021-08-14 18:55:25.830544 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '83f644fb-d272-4902-809c-41c6695e0097', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f54e2d5deb0>]}
+2021-08-14 18:55:25.830842 (Thread-1): 18:55:25 | 2 of 22 OK created view model dbt_jrgseverino.stg_employee........... [OK in 0.89s]
+2021-08-14 18:55:25.830915 (Thread-1): Finished running node model.adventureworks_etl.stg_employee
+2021-08-14 18:55:25.831022 (Thread-1): Began running node model.adventureworks_etl.stg_person
+2021-08-14 18:55:25.831167 (Thread-1): 18:55:25 | 3 of 22 START view model dbt_jrgseverino.stg_person.................. [RUN]
+2021-08-14 18:55:25.831608 (Thread-1): Acquiring new bigquery connection "model.adventureworks_etl.stg_person".
+2021-08-14 18:55:25.831693 (Thread-1): Compiling model.adventureworks_etl.stg_person
+2021-08-14 18:55:25.833745 (Thread-1): Writing injected SQL for node "model.adventureworks_etl.stg_person"
+2021-08-14 18:55:25.846632 (Thread-1): finished collecting timing info
+2021-08-14 18:55:25.848323 (Thread-1): Writing runtime SQL for node "model.adventureworks_etl.stg_person"
+2021-08-14 18:55:25.860702 (Thread-1): Opening a new connection, currently in state closed
+2021-08-14 18:55:25.864920 (Thread-1): On model.adventureworks_etl.stg_person: /* {"app": "dbt", "dbt_version": "0.19.2", "profile_name": "user", "target_name": "default", "node_id": "model.adventureworks_etl.stg_person"} */
+
+
+  create or replace view `cursoanalytics-318700`.`dbt_jrgseverino`.`stg_person`
+  OPTIONS()
+  as with dados_fonte as (
+    select
+    businessentityid
+    , namestyle
+    , title
+    , firstname
+    , middlename
+    , lastname
+    , suffix
+    , emailpromotion
+    from `cursoanalytics-318700`.`adventureworks_etl`.`person`
+)
+
+select * from dados_fonte;
+
+
+2021-08-14 18:55:26.700239 (Thread-1): finished collecting timing info
+2021-08-14 18:55:26.700617 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '83f644fb-d272-4902-809c-41c6695e0097', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f54e2dc0ca0>]}
+2021-08-14 18:55:26.700904 (Thread-1): 18:55:26 | 3 of 22 OK created view model dbt_jrgseverino.stg_person............. [OK in 0.87s]
+2021-08-14 18:55:26.700976 (Thread-1): Finished running node model.adventureworks_etl.stg_person
+2021-08-14 18:55:26.701080 (Thread-1): Began running node model.adventureworks_etl.stg_personcreditcard
+2021-08-14 18:55:26.701221 (Thread-1): 18:55:26 | 4 of 22 START view model dbt_jrgseverino.stg_personcreditcard........ [RUN]
+2021-08-14 18:55:26.701432 (Thread-1): Acquiring new bigquery connection "model.adventureworks_etl.stg_personcreditcard".
+2021-08-14 18:55:26.701504 (Thread-1): Compiling model.adventureworks_etl.stg_personcreditcard
+2021-08-14 18:55:26.703552 (Thread-1): Writing injected SQL for node "model.adventureworks_etl.stg_personcreditcard"
+2021-08-14 18:55:26.718247 (Thread-1): finished collecting timing info
+2021-08-14 18:55:26.719932 (Thread-1): Writing runtime SQL for node "model.adventureworks_etl.stg_personcreditcard"
+2021-08-14 18:55:26.736758 (Thread-1): Opening a new connection, currently in state closed
+2021-08-14 18:55:26.740961 (Thread-1): On model.adventureworks_etl.stg_personcreditcard: /* {"app": "dbt", "dbt_version": "0.19.2", "profile_name": "user", "target_name": "default", "node_id": "model.adventureworks_etl.stg_personcreditcard"} */
+
+
+  create or replace view `cursoanalytics-318700`.`dbt_jrgseverino`.`stg_personcreditcard`
+  OPTIONS()
+  as with dados_fonte as (
+    select
+    businessentityid
+    , creditcardid
+    from `cursoanalytics-318700`.`adventureworks_etl`.`personcreditcard`
+)
+
+select * from dados_fonte;
+
+
+2021-08-14 18:55:27.095782 (Thread-19): handling poll request
+2021-08-14 18:55:27.096057 (Thread-19): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f9eb221c-76cb-490c-90fc-c4935d5c4f2c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f87ec200bb0>]}
+2021-08-14 18:55:27.096824 (Thread-19): sending response (<Response 12195 bytes [200 OK]>) to 10.0.5.252
+2021-08-14 18:55:27.786532 (Thread-1): finished collecting timing info
+2021-08-14 18:55:27.786926 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '83f644fb-d272-4902-809c-41c6695e0097', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f54e2ded9d0>]}
+2021-08-14 18:55:27.787235 (Thread-1): 18:55:27 | 4 of 22 OK created view model dbt_jrgseverino.stg_personcreditcard... [OK in 1.09s]
+2021-08-14 18:55:27.787313 (Thread-1): Finished running node model.adventureworks_etl.stg_personcreditcard
+2021-08-14 18:55:27.787421 (Thread-1): Began running node model.adventureworks_etl.stg_product
+2021-08-14 18:55:27.787562 (Thread-1): 18:55:27 | 5 of 22 START view model dbt_jrgseverino.stg_product................. [RUN]
+2021-08-14 18:55:27.787757 (Thread-1): Acquiring new bigquery connection "model.adventureworks_etl.stg_product".
+2021-08-14 18:55:27.787827 (Thread-1): Compiling model.adventureworks_etl.stg_product
+2021-08-14 18:55:27.789982 (Thread-1): Writing injected SQL for node "model.adventureworks_etl.stg_product"
+2021-08-14 18:55:27.803956 (Thread-1): finished collecting timing info
+2021-08-14 18:55:27.805781 (Thread-1): Writing runtime SQL for node "model.adventureworks_etl.stg_product"
+2021-08-14 18:55:27.820222 (Thread-1): Opening a new connection, currently in state closed
+2021-08-14 18:55:27.824475 (Thread-1): On model.adventureworks_etl.stg_product: /* {"app": "dbt", "dbt_version": "0.19.2", "profile_name": "user", "target_name": "default", "node_id": "model.adventureworks_etl.stg_product"} */
+
+
+  create or replace view `cursoanalytics-318700`.`dbt_jrgseverino`.`stg_product`
+  OPTIONS()
+  as with dados_fonte as (
+    select
+    productid
+    , name
+    , productnumber
+    , makeflag
+    , finishedgoodsflag
+    , color
+    , safetystocklevel
+    , reorderpoint
+    , standardcost
+    , listprice
+    , size
+    , sizeunitmeasurecode
+    , weightunitmeasurecode
+    , weight
+    , daystomanufacture
+    , productline
+    , class
+    , style
+    , productsubcategoryid
+    , productmodelid
+    , sellstartdate
+    , sellenddate
+    from `cursoanalytics-318700`.`adventureworks_etl`.`product`
+)
+
+select * from dados_fonte;
+
+
+2021-08-14 18:55:28.613751 (Thread-1): finished collecting timing info
+2021-08-14 18:55:28.614131 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '83f644fb-d272-4902-809c-41c6695e0097', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f54e2ded2e0>]}
+2021-08-14 18:55:28.614420 (Thread-1): 18:55:28 | 5 of 22 OK created view model dbt_jrgseverino.stg_product............ [OK in 0.83s]
+2021-08-14 18:55:28.614493 (Thread-1): Finished running node model.adventureworks_etl.stg_product
+2021-08-14 18:55:28.614598 (Thread-1): Began running node model.adventureworks_etl.stg_salesperson
+2021-08-14 18:55:28.614738 (Thread-1): 18:55:28 | 6 of 22 START view model dbt_jrgseverino.stg_salesperson............. [RUN]
+2021-08-14 18:55:28.614932 (Thread-1): Acquiring new bigquery connection "model.adventureworks_etl.stg_salesperson".
+2021-08-14 18:55:28.615001 (Thread-1): Compiling model.adventureworks_etl.stg_salesperson
+2021-08-14 18:55:28.617241 (Thread-1): Writing injected SQL for node "model.adventureworks_etl.stg_salesperson"
+2021-08-14 18:55:28.633559 (Thread-1): finished collecting timing info
+2021-08-14 18:55:28.635147 (Thread-1): Writing runtime SQL for node "model.adventureworks_etl.stg_salesperson"
+2021-08-14 18:55:28.650245 (Thread-1): Opening a new connection, currently in state closed
+2021-08-14 18:55:28.654405 (Thread-1): On model.adventureworks_etl.stg_salesperson: /* {"app": "dbt", "dbt_version": "0.19.2", "profile_name": "user", "target_name": "default", "node_id": "model.adventureworks_etl.stg_salesperson"} */
+
+
+  create or replace view `cursoanalytics-318700`.`dbt_jrgseverino`.`stg_salesperson`
+  OPTIONS()
+  as with dados_fonte as (
+    select
+    businessentityid
+    , territoryid
+    , salesquota
+    , bonus
+    , commissionpct
+    , salesytd
+    , saleslastyear
+    from `cursoanalytics-318700`.`adventureworks_etl`.`salesperson`
+)
+
+select * from dados_fonte;
+
+
+2021-08-14 18:55:29.058442 (Thread-20): handling poll request
+2021-08-14 18:55:29.058719 (Thread-20): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f9eb221c-76cb-490c-90fc-c4935d5c4f2c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f87ec058ee0>]}
+2021-08-14 18:55:29.059479 (Thread-20): sending response (<Response 12526 bytes [200 OK]>) to 10.0.25.105
+2021-08-14 18:55:29.530924 (Thread-1): finished collecting timing info
+2021-08-14 18:55:29.531327 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '83f644fb-d272-4902-809c-41c6695e0097', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f54e2c5ebe0>]}
+2021-08-14 18:55:29.531627 (Thread-1): 18:55:29 | 6 of 22 OK created view model dbt_jrgseverino.stg_salesperson........ [OK in 0.92s]
+2021-08-14 18:55:29.531702 (Thread-1): Finished running node model.adventureworks_etl.stg_salesperson
+2021-08-14 18:55:29.531809 (Thread-1): Began running node model.adventureworks_etl.stg_salesreason
+2021-08-14 18:55:29.531957 (Thread-1): 18:55:29 | 7 of 22 START view model dbt_jrgseverino.stg_salesreason............. [RUN]
+2021-08-14 18:55:29.532158 (Thread-1): Acquiring new bigquery connection "model.adventureworks_etl.stg_salesreason".
+2021-08-14 18:55:29.532227 (Thread-1): Compiling model.adventureworks_etl.stg_salesreason
+2021-08-14 18:55:29.534469 (Thread-1): Writing injected SQL for node "model.adventureworks_etl.stg_salesreason"
+2021-08-14 18:55:29.554762 (Thread-1): finished collecting timing info
+2021-08-14 18:55:29.556498 (Thread-1): Writing runtime SQL for node "model.adventureworks_etl.stg_salesreason"
+2021-08-14 18:55:29.571554 (Thread-1): Opening a new connection, currently in state closed
+2021-08-14 18:55:29.575775 (Thread-1): On model.adventureworks_etl.stg_salesreason: /* {"app": "dbt", "dbt_version": "0.19.2", "profile_name": "user", "target_name": "default", "node_id": "model.adventureworks_etl.stg_salesreason"} */
+
+
+  create or replace view `cursoanalytics-318700`.`dbt_jrgseverino`.`stg_salesreason`
+  OPTIONS()
+  as with dados_fonte as (
+    select
+    salesreasonid 
+    , name  
+    , reasontype
+    from `cursoanalytics-318700`.`adventureworks_etl`.`salesreason`
+)
+
+select * from dados_fonte;
+
+
+2021-08-14 18:55:30.337210 (Thread-1): finished collecting timing info
+2021-08-14 18:55:30.337630 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '83f644fb-d272-4902-809c-41c6695e0097', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f54e2d2b4c0>]}
+2021-08-14 18:55:30.338079 (Thread-1): 18:55:30 | 7 of 22 OK created view model dbt_jrgseverino.stg_salesreason........ [OK in 0.81s]
+2021-08-14 18:55:30.338160 (Thread-1): Finished running node model.adventureworks_etl.stg_salesreason
+2021-08-14 18:55:30.338271 (Thread-1): Began running node model.adventureworks_etl.stg_salesterritory
+2021-08-14 18:55:30.338413 (Thread-1): 18:55:30 | 8 of 22 START view model dbt_jrgseverino.stg_salesterritory.......... [RUN]
+2021-08-14 18:55:30.338610 (Thread-1): Acquiring new bigquery connection "model.adventureworks_etl.stg_salesterritory".
+2021-08-14 18:55:30.338679 (Thread-1): Compiling model.adventureworks_etl.stg_salesterritory
+2021-08-14 18:55:30.344430 (Thread-1): Writing injected SQL for node "model.adventureworks_etl.stg_salesterritory"
+2021-08-14 18:55:30.360044 (Thread-1): finished collecting timing info
+2021-08-14 18:55:30.361823 (Thread-1): Writing runtime SQL for node "model.adventureworks_etl.stg_salesterritory"
+2021-08-14 18:55:30.375835 (Thread-1): Opening a new connection, currently in state closed
+2021-08-14 18:55:30.380018 (Thread-1): On model.adventureworks_etl.stg_salesterritory: /* {"app": "dbt", "dbt_version": "0.19.2", "profile_name": "user", "target_name": "default", "node_id": "model.adventureworks_etl.stg_salesterritory"} */
+
+
+  create or replace view `cursoanalytics-318700`.`dbt_jrgseverino`.`stg_salesterritory`
+  OPTIONS()
+  as with dados_fonte as (
+    select
+    territoryid
+    , name
+    , countryregioncode
+    , salesytd
+    , saleslastyear
+    , costytd
+    , costlastyear
+    from `cursoanalytics-318700`.`adventureworks_etl`.`salesterritory`
+)
+
+select * from dados_fonte;
+
+
+2021-08-14 18:55:31.077853 (Thread-21): handling poll request
+2021-08-14 18:55:31.078140 (Thread-21): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f9eb221c-76cb-490c-90fc-c4935d5c4f2c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f87ec058a30>]}
+2021-08-14 18:55:31.078923 (Thread-21): sending response (<Response 12299 bytes [200 OK]>) to 10.0.3.12
+2021-08-14 18:55:31.218205 (Thread-1): finished collecting timing info
+2021-08-14 18:55:31.218601 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '83f644fb-d272-4902-809c-41c6695e0097', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f54e2dedbb0>]}
+2021-08-14 18:55:31.219037 (Thread-1): 18:55:31 | 8 of 22 OK created view model dbt_jrgseverino.stg_salesterritory..... [OK in 0.88s]
+2021-08-14 18:55:31.219165 (Thread-1): Finished running node model.adventureworks_etl.stg_salesterritory
+2021-08-14 18:55:31.219268 (Thread-1): Began running node model.adventureworks_etl.stg_store
+2021-08-14 18:55:31.219412 (Thread-1): 18:55:31 | 9 of 22 START view model dbt_jrgseverino.stg_store................... [RUN]
+2021-08-14 18:55:31.219614 (Thread-1): Acquiring new bigquery connection "model.adventureworks_etl.stg_store".
+2021-08-14 18:55:31.219683 (Thread-1): Compiling model.adventureworks_etl.stg_store
+2021-08-14 18:55:31.221765 (Thread-1): Writing injected SQL for node "model.adventureworks_etl.stg_store"
+2021-08-14 18:55:31.242183 (Thread-1): finished collecting timing info
+2021-08-14 18:55:31.244006 (Thread-1): Writing runtime SQL for node "model.adventureworks_etl.stg_store"
+2021-08-14 18:55:31.259854 (Thread-1): Opening a new connection, currently in state closed
+2021-08-14 18:55:31.264129 (Thread-1): On model.adventureworks_etl.stg_store: /* {"app": "dbt", "dbt_version": "0.19.2", "profile_name": "user", "target_name": "default", "node_id": "model.adventureworks_etl.stg_store"} */
+
+
+  create or replace view `cursoanalytics-318700`.`dbt_jrgseverino`.`stg_store`
+  OPTIONS()
+  as with dados_fonte as (
+    select
+    businessentityid
+    , name
+    , salespersonid
+    from `cursoanalytics-318700`.`adventureworks_etl`.`store`
+)
+
+select * from dados_fonte;
+
+
+2021-08-14 18:55:32.325980 (Thread-1): finished collecting timing info
+2021-08-14 18:55:32.326372 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '83f644fb-d272-4902-809c-41c6695e0097', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f54e2ded2e0>]}
+2021-08-14 18:55:32.326672 (Thread-1): 18:55:32 | 9 of 22 OK created view model dbt_jrgseverino.stg_store.............. [OK in 1.11s]
+2021-08-14 18:55:32.326748 (Thread-1): Finished running node model.adventureworks_etl.stg_store
+2021-08-14 18:55:32.326845 (Thread-1): Began running node model.adventureworks_etl.stg_salesorderdetail
+2021-08-14 18:55:32.326978 (Thread-1): 18:55:32 | 10 of 22 START view model dbt_jrgseverino.stg_salesorderdetail....... [RUN]
+2021-08-14 18:55:32.327171 (Thread-1): Acquiring new bigquery connection "model.adventureworks_etl.stg_salesorderdetail".
+2021-08-14 18:55:32.327239 (Thread-1): Compiling model.adventureworks_etl.stg_salesorderdetail
+2021-08-14 18:55:32.329360 (Thread-1): Writing injected SQL for node "model.adventureworks_etl.stg_salesorderdetail"
+2021-08-14 18:55:32.345359 (Thread-1): finished collecting timing info
+2021-08-14 18:55:32.347117 (Thread-1): Writing runtime SQL for node "model.adventureworks_etl.stg_salesorderdetail"
+2021-08-14 18:55:32.361294 (Thread-1): Opening a new connection, currently in state closed
+2021-08-14 18:55:32.365570 (Thread-1): On model.adventureworks_etl.stg_salesorderdetail: /* {"app": "dbt", "dbt_version": "0.19.2", "profile_name": "user", "target_name": "default", "node_id": "model.adventureworks_etl.stg_salesorderdetail"} */
+
+
+  create or replace view `cursoanalytics-318700`.`dbt_jrgseverino`.`stg_salesorderdetail`
+  OPTIONS()
+  as with dados_fonte as (
+    select
+    salesorderid
+    , salesorderdetailid
+    , carriertrackingnumber
+    , orderqty
+    , productid
+    , specialofferid
+    , unitprice
+    , unitpricediscount
+    from `cursoanalytics-318700`.`adventureworks_etl`.`salesorderdetail`
+)
+
+select * from dados_fonte;
+
+
+2021-08-14 18:55:33.117420 (Thread-22): handling poll request
+2021-08-14 18:55:33.117709 (Thread-22): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f9eb221c-76cb-490c-90fc-c4935d5c4f2c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f87ec04f130>]}
+2021-08-14 18:55:33.118530 (Thread-22): sending response (<Response 12244 bytes [200 OK]>) to 10.0.42.18
+2021-08-14 18:55:33.219178 (Thread-1): finished collecting timing info
+2021-08-14 18:55:33.219558 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '83f644fb-d272-4902-809c-41c6695e0097', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f54e2c5e7f0>]}
+2021-08-14 18:55:33.219979 (Thread-1): 18:55:33 | 10 of 22 OK created view model dbt_jrgseverino.stg_salesorderdetail.. [OK in 0.89s]
+2021-08-14 18:55:33.220060 (Thread-1): Finished running node model.adventureworks_etl.stg_salesorderdetail
+2021-08-14 18:55:33.220158 (Thread-1): Began running node model.adventureworks_etl.stg_salesorderheader
+2021-08-14 18:55:33.220292 (Thread-1): 18:55:33 | 11 of 22 START view model dbt_jrgseverino.stg_salesorderheader....... [RUN]
+2021-08-14 18:55:33.220481 (Thread-1): Acquiring new bigquery connection "model.adventureworks_etl.stg_salesorderheader".
+2021-08-14 18:55:33.220549 (Thread-1): Compiling model.adventureworks_etl.stg_salesorderheader
+2021-08-14 18:55:33.222695 (Thread-1): Writing injected SQL for node "model.adventureworks_etl.stg_salesorderheader"
+2021-08-14 18:55:33.242349 (Thread-1): finished collecting timing info
+2021-08-14 18:55:33.244054 (Thread-1): Writing runtime SQL for node "model.adventureworks_etl.stg_salesorderheader"
+2021-08-14 18:55:33.255679 (Thread-1): Opening a new connection, currently in state closed
+2021-08-14 18:55:33.259905 (Thread-1): On model.adventureworks_etl.stg_salesorderheader: /* {"app": "dbt", "dbt_version": "0.19.2", "profile_name": "user", "target_name": "default", "node_id": "model.adventureworks_etl.stg_salesorderheader"} */
+
+
+  create or replace view `cursoanalytics-318700`.`dbt_jrgseverino`.`stg_salesorderheader`
+  OPTIONS()
+  as with dados_fonte as (
+    select
+    salesorderid
+    , revisionnumber
+    , orderdate
+    , duedate
+    , shipdate
+    , status
+    , onlineorderflag
+    , purchaseordernumber
+    , accountnumber
+    , customerid
+    , salespersonid
+    , territoryid
+    , billtoaddressid
+    , shiptoaddressid
+    , shipmethodid
+    , creditcardid
+    , creditcardapprovalcode
+    , currencyrateid
+    , subtotal
+    , taxamt
+    , freight
+    , totaldue
+    from `cursoanalytics-318700`.`adventureworks_etl`.`salesorderheader`
+)
+
+select * from dados_fonte;
+
+
+2021-08-14 18:55:34.040383 (Thread-1): finished collecting timing info
+2021-08-14 18:55:34.040775 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '83f644fb-d272-4902-809c-41c6695e0097', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f54e2e769d0>]}
+2021-08-14 18:55:34.041064 (Thread-1): 18:55:34 | 11 of 22 OK created view model dbt_jrgseverino.stg_salesorderheader.. [OK in 0.82s]
+2021-08-14 18:55:34.041138 (Thread-1): Finished running node model.adventureworks_etl.stg_salesorderheader
+2021-08-14 18:55:34.041235 (Thread-1): Began running node model.adventureworks_etl.stg_salesorderheadersalesreason
+2021-08-14 18:55:34.041388 (Thread-1): 18:55:34 | 12 of 22 START view model dbt_jrgseverino.stg_salesorderheadersalesreason [RUN]
+2021-08-14 18:55:34.041585 (Thread-1): Acquiring new bigquery connection "model.adventureworks_etl.stg_salesorderheadersalesreason".
+2021-08-14 18:55:34.041654 (Thread-1): Compiling model.adventureworks_etl.stg_salesorderheadersalesreason
+2021-08-14 18:55:34.043888 (Thread-1): Writing injected SQL for node "model.adventureworks_etl.stg_salesorderheadersalesreason"
+2021-08-14 18:55:34.061783 (Thread-1): finished collecting timing info
+2021-08-14 18:55:34.063326 (Thread-1): Writing runtime SQL for node "model.adventureworks_etl.stg_salesorderheadersalesreason"
+2021-08-14 18:55:34.078554 (Thread-1): Opening a new connection, currently in state closed
+2021-08-14 18:55:34.082806 (Thread-1): On model.adventureworks_etl.stg_salesorderheadersalesreason: /* {"app": "dbt", "dbt_version": "0.19.2", "profile_name": "user", "target_name": "default", "node_id": "model.adventureworks_etl.stg_salesorderheadersalesreason"} */
+
+
+  create or replace view `cursoanalytics-318700`.`dbt_jrgseverino`.`stg_salesorderheadersalesreason`
+  OPTIONS()
+  as with dados_fonte as (
+    select
+    salesorderid
+    , salesreasonid
+    from `cursoanalytics-318700`.`adventureworks_etl`.`salesorderheadersalesreason`
+)
+
+select * from dados_fonte;
+
+
+2021-08-14 18:55:34.656805 (Thread-1): finished collecting timing info
+2021-08-14 18:55:34.657191 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '83f644fb-d272-4902-809c-41c6695e0097', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f54e2d34e20>]}
+2021-08-14 18:55:34.657646 (Thread-1): 18:55:34 | 12 of 22 OK created view model dbt_jrgseverino.stg_salesorderheadersalesreason [OK in 0.62s]
+2021-08-14 18:55:34.657725 (Thread-1): Finished running node model.adventureworks_etl.stg_salesorderheadersalesreason
+2021-08-14 18:55:34.657823 (Thread-1): Began running node model.adventureworks_etl.dim_customer
+2021-08-14 18:55:34.657958 (Thread-1): 18:55:34 | 13 of 22 START table model dbt_jrgseverino.dim_customer.............. [RUN]
+2021-08-14 18:55:34.658150 (Thread-1): Acquiring new bigquery connection "model.adventureworks_etl.dim_customer".
+2021-08-14 18:55:34.658219 (Thread-1): Compiling model.adventureworks_etl.dim_customer
+2021-08-14 18:55:34.660415 (Thread-1): Writing injected SQL for node "model.adventureworks_etl.dim_customer"
+2021-08-14 18:55:34.675954 (Thread-1): finished collecting timing info
+2021-08-14 18:55:34.690990 (Thread-1): Opening a new connection, currently in state closed
+2021-08-14 18:55:34.867642 (Thread-1): Writing runtime SQL for node "model.adventureworks_etl.dim_customer"
+2021-08-14 18:55:34.882631 (Thread-1): On model.adventureworks_etl.dim_customer: /* {"app": "dbt", "dbt_version": "0.19.2", "profile_name": "user", "target_name": "default", "node_id": "model.adventureworks_etl.dim_customer"} */
+
+
+  create or replace table `cursoanalytics-318700`.`dbt_jrgseverino`.`dim_customer`
+  
+  
+  OPTIONS()
+  as (
+    with selected as (
+    select
+    customerid as customer_id
+    , personid
+    , storeid
+    , territoryid
+    from `cursoanalytics-318700`.`dbt_jrgseverino`.`stg_customer`
+)
+, transformed as (
+    select
+    row_number() over (order by customer_id) as customer_sk
+    , *
+from selected
+)
+
+select * from transformed
+  );
+    
+2021-08-14 18:55:35.085536 (Thread-23): handling poll request
+2021-08-14 18:55:35.085818 (Thread-23): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f9eb221c-76cb-490c-90fc-c4935d5c4f2c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f87ec0c6bb0>]}
+2021-08-14 18:55:35.086714 (Thread-23): sending response (<Response 19148 bytes [200 OK]>) to 10.0.44.74
+2021-08-14 18:55:37.045110 (Thread-24): handling poll request
+2021-08-14 18:55:37.045414 (Thread-24): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f9eb221c-76cb-490c-90fc-c4935d5c4f2c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f87ec0c67c0>]}
+2021-08-14 18:55:37.045947 (Thread-24): sending response (<Response 303 bytes [200 OK]>) to 10.0.27.22
+2021-08-14 18:55:37.152342 (Thread-1): finished collecting timing info
+2021-08-14 18:55:37.152732 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '83f644fb-d272-4902-809c-41c6695e0097', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f54e2e769d0>]}
+2021-08-14 18:55:37.153029 (Thread-1): 18:55:37 | 13 of 22 OK created table model dbt_jrgseverino.dim_customer......... [CREATE TABLE (19.8k rows, 469.5 KB processed) in 2.49s]
+2021-08-14 18:55:37.153103 (Thread-1): Finished running node model.adventureworks_etl.dim_customer
+2021-08-14 18:55:37.153203 (Thread-1): Began running node model.adventureworks_etl.dim_employee
+2021-08-14 18:55:37.153359 (Thread-1): 18:55:37 | 14 of 22 START table model dbt_jrgseverino.dim_employee.............. [RUN]
+2021-08-14 18:55:37.153550 (Thread-1): Acquiring new bigquery connection "model.adventureworks_etl.dim_employee".
+2021-08-14 18:55:37.153620 (Thread-1): Compiling model.adventureworks_etl.dim_employee
+2021-08-14 18:55:37.155948 (Thread-1): Writing injected SQL for node "model.adventureworks_etl.dim_employee"
+2021-08-14 18:55:37.172658 (Thread-1): finished collecting timing info
+2021-08-14 18:55:37.174007 (Thread-1): Opening a new connection, currently in state closed
+2021-08-14 18:55:37.374990 (Thread-1): Writing runtime SQL for node "model.adventureworks_etl.dim_employee"
+2021-08-14 18:55:37.388448 (Thread-1): On model.adventureworks_etl.dim_employee: /* {"app": "dbt", "dbt_version": "0.19.2", "profile_name": "user", "target_name": "default", "node_id": "model.adventureworks_etl.dim_employee"} */
+
+
+  create or replace table `cursoanalytics-318700`.`dbt_jrgseverino`.`dim_employee`
+  
+  
+  OPTIONS()
+  as (
+    with selected as (
+    select
+    businessentityid as employee_id
+    , nationalidnumber
+    , loginid
+    , jobtitle
+    , birthdate
+    , maritalstatus
+    , gender
+    , hiredate
+    , salariedflag
+    , vacationhours
+    , sickleavehours
+    , currentflag
+    , organizationnode
+    from `cursoanalytics-318700`.`dbt_jrgseverino`.`stg_employee`
+)
+, transformed as (
+    select
+    row_number() over (order by employee_id) as employee_sk
+    , *
+from selected
+)
+
+select * from transformed
+  );
+    
+2021-08-14 18:55:39.053793 (Thread-25): handling poll request
+2021-08-14 18:55:39.054084 (Thread-25): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f9eb221c-76cb-490c-90fc-c4935d5c4f2c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f87ec280910>]}
+2021-08-14 18:55:39.054744 (Thread-25): sending response (<Response 6531 bytes [200 OK]>) to 10.0.9.77
+2021-08-14 18:55:39.967164 (Thread-1): finished collecting timing info
+2021-08-14 18:55:39.967578 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '83f644fb-d272-4902-809c-41c6695e0097', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f54e2c66d90>]}
+2021-08-14 18:55:39.967879 (Thread-1): 18:55:39 | 14 of 22 OK created table model dbt_jrgseverino.dim_employee......... [CREATE TABLE (290.0 rows, 34.2 KB processed) in 2.81s]
+2021-08-14 18:55:39.967956 (Thread-1): Finished running node model.adventureworks_etl.dim_employee
+2021-08-14 18:55:39.968056 (Thread-1): Began running node model.adventureworks_etl.dim_person
+2021-08-14 18:55:39.968191 (Thread-1): 18:55:39 | 15 of 22 START table model dbt_jrgseverino.dim_person................ [RUN]
+2021-08-14 18:55:39.968383 (Thread-1): Acquiring new bigquery connection "model.adventureworks_etl.dim_person".
+2021-08-14 18:55:39.968452 (Thread-1): Compiling model.adventureworks_etl.dim_person
+2021-08-14 18:55:39.970780 (Thread-1): Writing injected SQL for node "model.adventureworks_etl.dim_person"
+2021-08-14 18:55:39.986240 (Thread-1): finished collecting timing info
+2021-08-14 18:55:39.987551 (Thread-1): Opening a new connection, currently in state closed
+2021-08-14 18:55:40.166919 (Thread-1): Writing runtime SQL for node "model.adventureworks_etl.dim_person"
+2021-08-14 18:55:40.182725 (Thread-1): On model.adventureworks_etl.dim_person: /* {"app": "dbt", "dbt_version": "0.19.2", "profile_name": "user", "target_name": "default", "node_id": "model.adventureworks_etl.dim_person"} */
+
+
+  create or replace table `cursoanalytics-318700`.`dbt_jrgseverino`.`dim_person`
+  
+  
+  OPTIONS()
+  as (
+    with selected as (
+    select
+    businessentityid as person_id
+    , namestyle
+    , title
+    , firstname
+    , middlename
+    , lastname
+    , suffix
+    , emailpromotion
+    from `cursoanalytics-318700`.`dbt_jrgseverino`.`stg_person`
+)
+, transformed as (
+    select
+    row_number() over (order by person_id) as person_sk
+    , *
+from selected
+)
+
+select * from transformed
+  );
+    
+2021-08-14 18:55:41.093423 (Thread-26): handling poll request
+2021-08-14 18:55:41.093712 (Thread-26): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f9eb221c-76cb-490c-90fc-c4935d5c4f2c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f87ec0b2ca0>]}
+2021-08-14 18:55:41.094381 (Thread-26): sending response (<Response 6368 bytes [200 OK]>) to 10.0.3.12
+2021-08-14 18:55:43.091676 (Thread-27): handling poll request
+2021-08-14 18:55:43.091979 (Thread-27): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f9eb221c-76cb-490c-90fc-c4935d5c4f2c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f87ec0b2d90>]}
+2021-08-14 18:55:43.092524 (Thread-27): sending response (<Response 303 bytes [200 OK]>) to 10.0.33.223
+2021-08-14 18:55:43.954750 (Thread-1): finished collecting timing info
+2021-08-14 18:55:43.955143 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '83f644fb-d272-4902-809c-41c6695e0097', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f54e0bad550>]}
+2021-08-14 18:55:43.955438 (Thread-1): 18:55:43 | 15 of 22 OK created table model dbt_jrgseverino.dim_person........... [CREATE TABLE (20.0k rows, 673.7 KB processed) in 3.99s]
+2021-08-14 18:55:43.955525 (Thread-1): Finished running node model.adventureworks_etl.dim_person
+2021-08-14 18:55:43.955624 (Thread-1): Began running node model.adventureworks_etl.dim_personcreditcard
+2021-08-14 18:55:43.955763 (Thread-1): 18:55:43 | 16 of 22 START table model dbt_jrgseverino.dim_personcreditcard...... [RUN]
+2021-08-14 18:55:43.956307 (Thread-1): Acquiring new bigquery connection "model.adventureworks_etl.dim_personcreditcard".
+2021-08-14 18:55:43.956395 (Thread-1): Compiling model.adventureworks_etl.dim_personcreditcard
+2021-08-14 18:55:43.958476 (Thread-1): Writing injected SQL for node "model.adventureworks_etl.dim_personcreditcard"
+2021-08-14 18:55:43.975229 (Thread-1): finished collecting timing info
+2021-08-14 18:55:43.976814 (Thread-1): Opening a new connection, currently in state closed
+2021-08-14 18:55:44.177205 (Thread-1): Writing runtime SQL for node "model.adventureworks_etl.dim_personcreditcard"
+2021-08-14 18:55:44.198576 (Thread-1): On model.adventureworks_etl.dim_personcreditcard: /* {"app": "dbt", "dbt_version": "0.19.2", "profile_name": "user", "target_name": "default", "node_id": "model.adventureworks_etl.dim_personcreditcard"} */
+
+
+  create or replace table `cursoanalytics-318700`.`dbt_jrgseverino`.`dim_personcreditcard`
+  
+  
+  OPTIONS()
+  as (
+    with selected as (
+    select
+    businessentityid as person_id
+    , creditcardid as creditcard_id
+    from `cursoanalytics-318700`.`dbt_jrgseverino`.`stg_personcreditcard`
+)
+, transformed as (
+    select
+    row_number() over (order by person_id) as person_sk
+    , row_number() over (order by person_id) as creditcard_sk
+    , *
+from selected
+)
+
+select * from transformed
+  );
+    
+2021-08-14 18:55:45.065991 (Thread-28): handling poll request
+2021-08-14 18:55:45.066325 (Thread-28): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f9eb221c-76cb-490c-90fc-c4935d5c4f2c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f87ec0b2820>]}
+2021-08-14 18:55:45.066979 (Thread-28): sending response (<Response 6562 bytes [200 OK]>) to 10.0.42.18
+2021-08-14 18:55:46.846545 (Thread-1): finished collecting timing info
+2021-08-14 18:55:46.846935 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '83f644fb-d272-4902-809c-41c6695e0097', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f54e0bc8910>]}
+2021-08-14 18:55:46.847233 (Thread-1): 18:55:46 | 16 of 22 OK created table model dbt_jrgseverino.dim_personcreditcard. [CREATE TABLE (19.1k rows, 298.7 KB processed) in 2.89s]
+2021-08-14 18:55:46.847307 (Thread-1): Finished running node model.adventureworks_etl.dim_personcreditcard
+2021-08-14 18:55:46.847407 (Thread-1): Began running node model.adventureworks_etl.dim_product
+2021-08-14 18:55:46.847540 (Thread-1): 18:55:46 | 17 of 22 START table model dbt_jrgseverino.dim_product............... [RUN]
+2021-08-14 18:55:46.847725 (Thread-1): Acquiring new bigquery connection "model.adventureworks_etl.dim_product".
+2021-08-14 18:55:46.847795 (Thread-1): Compiling model.adventureworks_etl.dim_product
+2021-08-14 18:55:46.850270 (Thread-1): Writing injected SQL for node "model.adventureworks_etl.dim_product"
+2021-08-14 18:55:46.864694 (Thread-1): finished collecting timing info
+2021-08-14 18:55:46.866181 (Thread-1): Opening a new connection, currently in state closed
+2021-08-14 18:55:47.061697 (Thread-1): Writing runtime SQL for node "model.adventureworks_etl.dim_product"
+2021-08-14 18:55:47.070737 (Thread-29): handling poll request
+2021-08-14 18:55:47.070996 (Thread-29): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f9eb221c-76cb-490c-90fc-c4935d5c4f2c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f87ec0abd90>]}
+2021-08-14 18:55:47.080128 (Thread-1): On model.adventureworks_etl.dim_product: /* {"app": "dbt", "dbt_version": "0.19.2", "profile_name": "user", "target_name": "default", "node_id": "model.adventureworks_etl.dim_product"} */
+
+
+  create or replace table `cursoanalytics-318700`.`dbt_jrgseverino`.`dim_product`
+  
+  
+  OPTIONS()
+  as (
+    with selected as (
+    select
+    productid as product_id
+    , name
+    , productnumber
+    , makeflag
+    , finishedgoodsflag
+    , color
+    , safetystocklevel
+    , reorderpoint
+    , standardcost
+    , listprice
+    , size
+    , sizeunitmeasurecode
+    , weightunitmeasurecode
+    , weight
+    , daystomanufacture
+    , productline
+    , class
+    , style
+    , productsubcategoryid
+    , productmodelid
+    , sellstartdate
+    , sellenddate
+    from `cursoanalytics-318700`.`dbt_jrgseverino`.`stg_product`
+)
+, transformed as (
+    select
+    row_number() over (order by product_id) as product_sk
+    , *
+from selected
+)
+
+select * from transformed
+  );
+    
+2021-08-14 18:55:47.095706 (Thread-29): sending response (<Response 6720 bytes [200 OK]>) to 10.0.9.228
+2021-08-14 18:55:49.058041 (Thread-30): handling poll request
+2021-08-14 18:55:49.058338 (Thread-30): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f9eb221c-76cb-490c-90fc-c4935d5c4f2c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f87ec0b2af0>]}
+2021-08-14 18:55:49.058859 (Thread-30): sending response (<Response 303 bytes [200 OK]>) to 10.0.19.71
+2021-08-14 18:55:49.479343 (Thread-1): finished collecting timing info
+2021-08-14 18:55:49.479750 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '83f644fb-d272-4902-809c-41c6695e0097', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f54e0b53a90>]}
+2021-08-14 18:55:49.480058 (Thread-1): 18:55:49 | 17 of 22 OK created table model dbt_jrgseverino.dim_product.......... [CREATE TABLE (504.0 rows, 67.4 KB processed) in 2.63s]
+2021-08-14 18:55:49.480134 (Thread-1): Finished running node model.adventureworks_etl.dim_product
+2021-08-14 18:55:49.480232 (Thread-1): Began running node model.adventureworks_etl.dim_salesperson
+2021-08-14 18:55:49.480367 (Thread-1): 18:55:49 | 18 of 22 START table model dbt_jrgseverino.dim_salesperson........... [RUN]
+2021-08-14 18:55:49.480561 (Thread-1): Acquiring new bigquery connection "model.adventureworks_etl.dim_salesperson".
+2021-08-14 18:55:49.480631 (Thread-1): Compiling model.adventureworks_etl.dim_salesperson
+2021-08-14 18:55:49.486127 (Thread-1): Writing injected SQL for node "model.adventureworks_etl.dim_salesperson"
+2021-08-14 18:55:49.501287 (Thread-1): finished collecting timing info
+2021-08-14 18:55:49.502712 (Thread-1): Opening a new connection, currently in state closed
+2021-08-14 18:55:49.683020 (Thread-1): Writing runtime SQL for node "model.adventureworks_etl.dim_salesperson"
+2021-08-14 18:55:49.699530 (Thread-1): On model.adventureworks_etl.dim_salesperson: /* {"app": "dbt", "dbt_version": "0.19.2", "profile_name": "user", "target_name": "default", "node_id": "model.adventureworks_etl.dim_salesperson"} */
+
+
+  create or replace table `cursoanalytics-318700`.`dbt_jrgseverino`.`dim_salesperson`
+  
+  
+  OPTIONS()
+  as (
+    with selected as (
+    select
+    businessentityid as salesperson_id
+    , territoryid
+    , salesquota
+    , bonus
+    , commissionpct
+    , salesytd
+    , saleslastyear
+    from `cursoanalytics-318700`.`dbt_jrgseverino`.`stg_salesperson`
+)
+, transformed as (
+    select
+    row_number() over (order by salesperson_id) as salesperson_sk
+    , *
+from selected
+)
+
+select * from transformed
+  );
+    
+2021-08-14 18:55:51.058198 (Thread-31): handling poll request
+2021-08-14 18:55:51.058523 (Thread-31): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f9eb221c-76cb-490c-90fc-c4935d5c4f2c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f87ec0c6c10>]}
+2021-08-14 18:55:51.059199 (Thread-31): sending response (<Response 6479 bytes [200 OK]>) to 10.0.25.105
+2021-08-14 18:55:52.381306 (Thread-1): finished collecting timing info
+2021-08-14 18:55:52.381721 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '83f644fb-d272-4902-809c-41c6695e0097', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f54e0b626a0>]}
+2021-08-14 18:55:52.382020 (Thread-1): 18:55:52 | 18 of 22 OK created table model dbt_jrgseverino.dim_salesperson...... [CREATE TABLE (17.0 rows, 1.5 KB processed) in 2.90s]
+2021-08-14 18:55:52.382096 (Thread-1): Finished running node model.adventureworks_etl.dim_salesperson
+2021-08-14 18:55:52.382197 (Thread-1): Began running node model.adventureworks_etl.dim_salesreason
+2021-08-14 18:55:52.382331 (Thread-1): 18:55:52 | 19 of 22 START table model dbt_jrgseverino.dim_salesreason........... [RUN]
+2021-08-14 18:55:52.382516 (Thread-1): Acquiring new bigquery connection "model.adventureworks_etl.dim_salesreason".
+2021-08-14 18:55:52.382584 (Thread-1): Compiling model.adventureworks_etl.dim_salesreason
+2021-08-14 18:55:52.384785 (Thread-1): Writing injected SQL for node "model.adventureworks_etl.dim_salesreason"
+2021-08-14 18:55:52.399940 (Thread-1): finished collecting timing info
+2021-08-14 18:55:52.401269 (Thread-1): Opening a new connection, currently in state closed
+2021-08-14 18:55:52.559298 (Thread-1): Writing runtime SQL for node "model.adventureworks_etl.dim_salesreason"
+2021-08-14 18:55:52.572590 (Thread-1): On model.adventureworks_etl.dim_salesreason: /* {"app": "dbt", "dbt_version": "0.19.2", "profile_name": "user", "target_name": "default", "node_id": "model.adventureworks_etl.dim_salesreason"} */
+
+
+  create or replace table `cursoanalytics-318700`.`dbt_jrgseverino`.`dim_salesreason`
+  
+  
+  OPTIONS()
+  as (
+    with selected as (
+    select
+    salesreasonid as salesreason_id
+    , name  
+    , reasontype
+    from `cursoanalytics-318700`.`dbt_jrgseverino`.`stg_salesreason`
+)
+, transformed as (
+    select
+    row_number() over (order by salesreason_id) as salesreason_sk
+    , *
+from selected
+)
+
+select * from transformed
+  );
+    
+2021-08-14 18:55:53.086292 (Thread-32): handling poll request
+2021-08-14 18:55:53.086581 (Thread-32): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f9eb221c-76cb-490c-90fc-c4935d5c4f2c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f87ec0ab5b0>]}
+2021-08-14 18:55:53.087270 (Thread-32): sending response (<Response 6418 bytes [200 OK]>) to 10.0.44.74
+2021-08-14 18:55:54.849878 (Thread-1): finished collecting timing info
+2021-08-14 18:55:54.850368 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '83f644fb-d272-4902-809c-41c6695e0097', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f54e0b53fd0>]}
+2021-08-14 18:55:54.850822 (Thread-1): 18:55:54 | 19 of 22 OK created table model dbt_jrgseverino.dim_salesreason...... [CREATE TABLE (10.0 rows, 305.0 Bytes processed) in 2.47s]
+2021-08-14 18:55:54.850953 (Thread-1): Finished running node model.adventureworks_etl.dim_salesreason
+2021-08-14 18:55:54.851114 (Thread-1): Began running node model.adventureworks_etl.dim_salesterritory
+2021-08-14 18:55:54.851362 (Thread-1): 18:55:54 | 20 of 22 START table model dbt_jrgseverino.dim_salesterritory........ [RUN]
+2021-08-14 18:55:54.851650 (Thread-1): Acquiring new bigquery connection "model.adventureworks_etl.dim_salesterritory".
+2021-08-14 18:55:54.851736 (Thread-1): Compiling model.adventureworks_etl.dim_salesterritory
+2021-08-14 18:55:54.854856 (Thread-1): Writing injected SQL for node "model.adventureworks_etl.dim_salesterritory"
+2021-08-14 18:55:54.870504 (Thread-1): finished collecting timing info
+2021-08-14 18:55:54.872385 (Thread-1): Opening a new connection, currently in state closed
+2021-08-14 18:55:55.053414 (Thread-1): Writing runtime SQL for node "model.adventureworks_etl.dim_salesterritory"
+2021-08-14 18:55:55.069498 (Thread-1): On model.adventureworks_etl.dim_salesterritory: /* {"app": "dbt", "dbt_version": "0.19.2", "profile_name": "user", "target_name": "default", "node_id": "model.adventureworks_etl.dim_salesterritory"} */
+
+
+  create or replace table `cursoanalytics-318700`.`dbt_jrgseverino`.`dim_salesterritory`
+  
+  
+  OPTIONS()
+  as (
+    with selected as (
+    select
+    territoryid as territory_id
+    , name
+    , countryregioncode
+    , salesytd
+    , saleslastyear
+    , costytd
+    , costlastyear
+    from `cursoanalytics-318700`.`dbt_jrgseverino`.`stg_salesterritory`
+)
+, transformed as (
+    select
+    row_number() over (order by territory_id) as territory_sk
+    , *
+from selected
+)
+
+select * from transformed
+  );
+    
+2021-08-14 18:55:55.077845 (Thread-33): handling poll request
+2021-08-14 18:55:55.078077 (Thread-33): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f9eb221c-76cb-490c-90fc-c4935d5c4f2c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f87ec0ab460>]}
+2021-08-14 18:55:55.078728 (Thread-33): sending response (<Response 6558 bytes [200 OK]>) to 10.0.9.228
+2021-08-14 18:55:57.087063 (Thread-34): handling poll request
+2021-08-14 18:55:57.087345 (Thread-34): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f9eb221c-76cb-490c-90fc-c4935d5c4f2c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f87ec0ab2e0>]}
+2021-08-14 18:55:57.087878 (Thread-34): sending response (<Response 303 bytes [200 OK]>) to 10.0.34.201
+2021-08-14 18:55:57.310464 (Thread-1): finished collecting timing info
+2021-08-14 18:55:57.310858 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '83f644fb-d272-4902-809c-41c6695e0097', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f54e0af0070>]}
+2021-08-14 18:55:57.311155 (Thread-1): 18:55:57 | 20 of 22 OK created table model dbt_jrgseverino.dim_salesterritory... [CREATE TABLE (10.0 rows, 865.0 Bytes processed) in 2.46s]
+2021-08-14 18:55:57.311230 (Thread-1): Finished running node model.adventureworks_etl.dim_salesterritory
+2021-08-14 18:55:57.311328 (Thread-1): Began running node model.adventureworks_etl.dim_store
+2021-08-14 18:55:57.311464 (Thread-1): 18:55:57 | 21 of 22 START table model dbt_jrgseverino.dim_store................. [RUN]
+2021-08-14 18:55:57.311657 (Thread-1): Acquiring new bigquery connection "model.adventureworks_etl.dim_store".
+2021-08-14 18:55:57.311727 (Thread-1): Compiling model.adventureworks_etl.dim_store
+2021-08-14 18:55:57.314148 (Thread-1): Writing injected SQL for node "model.adventureworks_etl.dim_store"
+2021-08-14 18:55:57.331260 (Thread-1): finished collecting timing info
+2021-08-14 18:55:57.332735 (Thread-1): Opening a new connection, currently in state closed
+2021-08-14 18:55:57.495452 (Thread-1): Writing runtime SQL for node "model.adventureworks_etl.dim_store"
+2021-08-14 18:55:57.511054 (Thread-1): On model.adventureworks_etl.dim_store: /* {"app": "dbt", "dbt_version": "0.19.2", "profile_name": "user", "target_name": "default", "node_id": "model.adventureworks_etl.dim_store"} */
+
+
+  create or replace table `cursoanalytics-318700`.`dbt_jrgseverino`.`dim_store`
+  
+  
+  OPTIONS()
+  as (
+    with selected as (
+    select
+    businessentityid as store_id
+    , name
+    , salespersonid
+    from `cursoanalytics-318700`.`dbt_jrgseverino`.`stg_store`
+)
+, transformed as (
+    select
+    row_number() over (order by store_id) as store_sk
+    , *
+from selected
+)
+
+select * from transformed
+  );
+    
+2021-08-14 18:55:59.064899 (Thread-35): handling poll request
+2021-08-14 18:55:59.065215 (Thread-35): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f9eb221c-76cb-490c-90fc-c4935d5c4f2c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f87ec0a61f0>]}
+2021-08-14 18:55:59.065929 (Thread-35): sending response (<Response 6292 bytes [200 OK]>) to 10.0.5.252
+2021-08-14 18:56:00.187445 (Thread-1): finished collecting timing info
+2021-08-14 18:56:00.187828 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '83f644fb-d272-4902-809c-41c6695e0097', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f54e0b03cd0>]}
+2021-08-14 18:56:00.188119 (Thread-1): 18:56:00 | 21 of 22 OK created table model dbt_jrgseverino.dim_store............ [CREATE TABLE (701.0 rows, 26.1 KB processed) in 2.88s]
+2021-08-14 18:56:00.188194 (Thread-1): Finished running node model.adventureworks_etl.dim_store
+2021-08-14 18:56:00.189076 (Thread-1): Began running node model.adventureworks_etl.fact_salesorderdetail
+2021-08-14 18:56:00.189281 (Thread-1): 18:56:00 | 22 of 22 START table model dbt_jrgseverino.fact_salesorderdetail..... [RUN]
+2021-08-14 18:56:00.189502 (Thread-1): Acquiring new bigquery connection "model.adventureworks_etl.fact_salesorderdetail".
+2021-08-14 18:56:00.189575 (Thread-1): Compiling model.adventureworks_etl.fact_salesorderdetail
+2021-08-14 18:56:00.194069 (Thread-1): Writing injected SQL for node "model.adventureworks_etl.fact_salesorderdetail"
+2021-08-14 18:56:00.224370 (Thread-1): finished collecting timing info
+2021-08-14 18:56:00.226055 (Thread-1): Opening a new connection, currently in state closed
+2021-08-14 18:56:00.433296 (Thread-1): Writing runtime SQL for node "model.adventureworks_etl.fact_salesorderdetail"
+2021-08-14 18:56:00.476377 (Thread-1): On model.adventureworks_etl.fact_salesorderdetail: /* {"app": "dbt", "dbt_version": "0.19.2", "profile_name": "user", "target_name": "default", "node_id": "model.adventureworks_etl.fact_salesorderdetail"} */
+
+
+  create or replace table `cursoanalytics-318700`.`dbt_jrgseverino`.`fact_salesorderdetail`
+  
+  
+  OPTIONS()
+  as (
+    with 
+    customer as (
+        select *
+        from `cursoanalytics-318700`.`dbt_jrgseverino`.`dim_customer`
+    ),
+    employee as (
+        select *
+        from `cursoanalytics-318700`.`dbt_jrgseverino`.`dim_employee`
+    ),    
+    person as (
+        select *
+        from `cursoanalytics-318700`.`dbt_jrgseverino`.`dim_person`
+    ),
+    personcreditcard as (
+        select *
+        from `cursoanalytics-318700`.`dbt_jrgseverino`.`dim_personcreditcard`
+    ),
+    product as (
+        select *
+        from `cursoanalytics-318700`.`dbt_jrgseverino`.`dim_product`
+    ),
+    salesperson as (
+        select *
+        from `cursoanalytics-318700`.`dbt_jrgseverino`.`dim_salesperson`
+    ),        
+    salesreason as (
+        select *
+        from `cursoanalytics-318700`.`dbt_jrgseverino`.`dim_salesreason`
+    ),
+    salesterritory as (
+        select *
+        from `cursoanalytics-318700`.`dbt_jrgseverino`.`dim_salesterritory`
+    ),
+    store as (
+        select *
+        from `cursoanalytics-318700`.`dbt_jrgseverino`.`dim_store`
+    ),
+    orderheader_with_sk as(
+        select
+            orderheader.salesorderid
+            , customer_sk as customer_fk
+            , salesperson_sk as salesperson_fk
+            , territory_sk as territory_fk
+            , creditcard_sk as creditcard_fk
+            , orderheader.billtoaddressid
+            , orderheader.shiptoaddressid
+            , orderheader.shipmethodid
+            , orderheader.currencyrateid
+            , orderheader.revisionnumber
+            , orderheader.orderdate
+            , orderheader.duedate
+            , orderheader.shipdate
+            , orderheader.status
+            , orderheader.onlineorderflag
+            , orderheader.purchaseordernumber
+            , orderheader.accountnumber
+            , orderheader.creditcardapprovalcode
+            , orderheader.subtotal
+            , orderheader.taxamt
+            , orderheader.freight
+            , orderheader.totaldue
+        from `cursoanalytics-318700`.`dbt_jrgseverino`.`stg_salesorderheader` as orderheader
+        left join customer on orderheader.customerid = customer.customer_id
+        left join salesperson on orderheader.salespersonid = salesperson.salesperson_id
+        left join salesterritory on orderheader.territoryid = salesterritory.territory_id
+        left join personcreditcard on orderheader.creditcardid = personcreditcard.creditcard_id
+    )
+    , orderdetail_with_sk as(
+        select
+            orderdetail.salesorderid
+            , orderdetail.salesorderdetailid
+            , orderdetail.carriertrackingnumber
+            , orderdetail.orderqty
+            , product.product_sk as product_fk
+            , orderdetail.specialofferid
+            , orderdetail.unitprice
+            , orderdetail.unitpricediscount      
+        from `cursoanalytics-318700`.`dbt_jrgseverino`.`stg_salesorderdetail` as orderdetail
+        left join product on orderdetail.productid = product.product_id
+    )
+    , final as (
+        select
+            orderdetail_with_sk.salesorderdetailid
+            , orderdetail_with_sk.salesorderid
+            , orderheader_with_sk.customer_fk
+            , orderdetail_with_sk.product_fk
+            , orderheader_with_sk.salesperson_fk
+            , orderheader_with_sk.territory_fk
+            , orderheader_with_sk.creditcard_fk
+            , orderheader_with_sk.billtoaddressid
+            , orderheader_with_sk.shiptoaddressid
+            , orderheader_with_sk.shipmethodid
+            , orderheader_with_sk.currencyrateid
+            , orderheader_with_sk.revisionnumber
+            , orderheader_with_sk.orderdate
+            , orderheader_with_sk.duedate
+            , orderheader_with_sk.shipdate
+            , orderheader_with_sk.status
+            , orderheader_with_sk.onlineorderflag
+            , orderheader_with_sk.purchaseordernumber
+            , orderheader_with_sk.accountnumber
+            , orderheader_with_sk.creditcardapprovalcode
+            , orderheader_with_sk.subtotal
+            , orderheader_with_sk.taxamt
+            , orderheader_with_sk.freight
+            , orderheader_with_sk.totaldue
+            , orderdetail_with_sk.carriertrackingnumber
+            , orderdetail_with_sk.orderqty
+            , orderdetail_with_sk.specialofferid
+            , orderdetail_with_sk.unitprice
+            , orderdetail_with_sk.unitpricediscount 
+            from orderheader_with_sk
+            left join orderdetail_with_sk on orderheader_with_sk.salesorderid = orderdetail_with_sk.salesorderid
+    )
+    select * from final
+  );
+    
+2021-08-14 18:56:01.123083 (Thread-36): handling poll request
+2021-08-14 18:56:01.123369 (Thread-36): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f9eb221c-76cb-490c-90fc-c4935d5c4f2c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f87ec0a6a00>]}
+2021-08-14 18:56:01.124094 (Thread-36): sending response (<Response 11287 bytes [200 OK]>) to 10.0.34.201
+2021-08-14 18:56:03.071554 (Thread-37): handling poll request
+2021-08-14 18:56:03.071842 (Thread-37): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f9eb221c-76cb-490c-90fc-c4935d5c4f2c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f87ec0a6ac0>]}
+2021-08-14 18:56:03.072362 (Thread-37): sending response (<Response 303 bytes [200 OK]>) to 10.0.25.152
+2021-08-14 18:56:05.181094 (Thread-38): handling poll request
+2021-08-14 18:56:05.181414 (Thread-38): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f9eb221c-76cb-490c-90fc-c4935d5c4f2c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f87ec09ce20>]}
+2021-08-14 18:56:05.181954 (Thread-38): sending response (<Response 303 bytes [200 OK]>) to 10.0.9.77
+2021-08-14 18:56:05.992569 (Thread-1): finished collecting timing info
+2021-08-14 18:56:05.993118 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '83f644fb-d272-4902-809c-41c6695e0097', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f54e0abfa00>]}
+2021-08-14 18:56:05.993460 (Thread-1): 18:56:05 | 22 of 22 OK created table model dbt_jrgseverino.fact_salesorderdetail [CREATE TABLE (121.3k rows, 15.7 MB processed) in 5.80s]
+2021-08-14 18:56:05.993543 (Thread-1): Finished running node model.adventureworks_etl.fact_salesorderdetail
+2021-08-14 18:56:05.994743 (MainThread): Acquiring new bigquery connection "master".
+2021-08-14 18:56:05.995076 (MainThread): 18:56:05 | 
+2021-08-14 18:56:05.995141 (MainThread): 18:56:05 | Finished running 12 view models, 10 table models in 42.45s.
+2021-08-14 18:56:05.995189 (MainThread): Connection 'master' was properly closed.
+2021-08-14 18:56:05.995227 (MainThread): Connection 'model.adventureworks_etl.fact_salesorderdetail' was properly closed.
+2021-08-14 18:56:06.088440 (MainThread): 
+2021-08-14 18:56:06.088560 (MainThread): Completed successfully
+2021-08-14 18:56:06.088643 (MainThread): 
+Done. PASS=22 WARN=0 ERROR=0 SKIP=0 TOTAL=22
+2021-08-14 18:56:07.081471 (Thread-39): handling poll request
+2021-08-14 18:56:07.081763 (Thread-39): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f9eb221c-76cb-490c-90fc-c4935d5c4f2c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f87ec163970>]}
+2021-08-14 18:56:07.084598 (Thread-39): sending response (<Response 85470 bytes [200 OK]>) to 10.0.33.223
+2021-08-14 18:56:08.015463 (Thread-40): handling status request
+2021-08-14 18:56:08.015773 (Thread-40): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f9eb221c-76cb-490c-90fc-c4935d5c4f2c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f87ec04fb50>]}
+2021-08-14 18:56:08.016771 (Thread-40): sending response (<Response 16749 bytes [200 OK]>) to 10.0.9.77
+2021-08-14 18:56:08.085373 (Thread-41): handling status request
+2021-08-14 18:56:08.085672 (Thread-41): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f9eb221c-76cb-490c-90fc-c4935d5c4f2c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f87ec1cb400>]}
+2021-08-14 18:56:08.086550 (Thread-41): sending response (<Response 16749 bytes [200 OK]>) to 10.0.40.254
+2021-08-14 18:56:08.147729 (Thread-42): handling status request
+2021-08-14 18:56:08.147993 (Thread-42): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f9eb221c-76cb-490c-90fc-c4935d5c4f2c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f87ec16cbb0>]}
+2021-08-14 18:56:08.148860 (Thread-42): sending response (<Response 16749 bytes [200 OK]>) to 10.0.6.250
+2021-08-14 20:32:50.720102 (Thread-43): handling status request
+2021-08-14 20:32:50.720380 (Thread-43): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f9eb221c-76cb-490c-90fc-c4935d5c4f2c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f87ec128700>]}
+2021-08-14 20:32:50.721326 (Thread-43): sending response (<Response 16749 bytes [200 OK]>) to 10.0.40.254
+2021-08-14 20:32:50.740665 (Thread-44): handling status request
+2021-08-14 20:32:50.740873 (Thread-44): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f9eb221c-76cb-490c-90fc-c4935d5c4f2c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f87ec113be0>]}
+2021-08-14 20:32:50.741773 (Thread-44): sending response (<Response 16749 bytes [200 OK]>) to 10.0.9.228
+2021-08-14 20:32:50.765675 (Thread-45): handling status request
+2021-08-14 20:32:50.765927 (Thread-45): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f9eb221c-76cb-490c-90fc-c4935d5c4f2c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f87ec09c490>]}
+2021-08-14 20:32:50.766782 (Thread-45): sending response (<Response 16749 bytes [200 OK]>) to 10.0.3.12
+2021-08-14 20:32:50.779035 (Thread-46): handling status request
+2021-08-14 20:32:50.779227 (Thread-46): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f9eb221c-76cb-490c-90fc-c4935d5c4f2c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f87ec126eb0>]}
+2021-08-14 20:32:50.780012 (Thread-46): sending response (<Response 16749 bytes [200 OK]>) to 10.0.33.11
+2021-08-14 20:32:50.797401 (Thread-47): handling ps request
+2021-08-14 20:32:50.797617 (Thread-47): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f9eb221c-76cb-490c-90fc-c4935d5c4f2c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f87ec126e50>]}
+2021-08-14 20:32:50.805061 (Thread-47): sending response (<Response 521 bytes [200 OK]>) to 10.0.5.252
+2021-08-14 20:32:50.827898 (Thread-48): handling status request
+2021-08-14 20:32:50.828106 (Thread-48): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f9eb221c-76cb-490c-90fc-c4935d5c4f2c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f87ec1095b0>]}
+2021-08-14 20:32:50.828896 (Thread-48): sending response (<Response 16749 bytes [200 OK]>) to 10.0.40.254
+2021-08-14 20:32:51.874495 (Thread-49): handling poll request
+2021-08-14 20:32:51.874781 (Thread-49): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f9eb221c-76cb-490c-90fc-c4935d5c4f2c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f87ec1093a0>]}
+2021-08-14 20:32:51.880502 (Thread-49): sending response (<Response 243405 bytes [200 OK]>) to 10.0.25.152
+2021-08-14 20:32:53.700836 (Thread-50): handling status request
+2021-08-14 20:32:53.701121 (Thread-50): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f9eb221c-76cb-490c-90fc-c4935d5c4f2c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f87ec113c40>]}
+2021-08-14 20:32:53.702065 (Thread-50): sending response (<Response 16749 bytes [200 OK]>) to 10.0.3.12
+2021-08-14 20:32:53.706354 (Thread-51): handling status request
+2021-08-14 20:32:53.706542 (Thread-51): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f9eb221c-76cb-490c-90fc-c4935d5c4f2c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f87ec16cdf0>]}
+2021-08-14 20:32:53.707291 (Thread-51): sending response (<Response 16749 bytes [200 OK]>) to 10.0.25.105
+2021-08-14 20:32:53.833526 (Thread-52): handling status request
+2021-08-14 20:32:53.833827 (Thread-52): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f9eb221c-76cb-490c-90fc-c4935d5c4f2c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f87ec1cb400>]}
+2021-08-14 20:32:53.834729 (Thread-52): sending response (<Response 16749 bytes [200 OK]>) to 10.0.5.252
+2021-08-14 20:32:58.460104 (Thread-53): handling status request
+2021-08-14 20:32:58.460391 (Thread-53): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f9eb221c-76cb-490c-90fc-c4935d5c4f2c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f87ec0c61c0>]}
+2021-08-14 20:32:58.461263 (Thread-53): sending response (<Response 16749 bytes [200 OK]>) to 10.0.42.18
+2021-08-14 20:32:58.642449 (Thread-54): handling status request
+2021-08-14 20:32:58.642657 (Thread-54): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f9eb221c-76cb-490c-90fc-c4935d5c4f2c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f87ec163fa0>]}
+2021-08-14 20:32:58.643500 (Thread-54): sending response (<Response 16749 bytes [200 OK]>) to 10.0.25.105
+2021-08-14 20:32:58.805741 (Thread-55): handling cli_args request
+2021-08-14 20:32:58.806028 (Thread-55): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f9eb221c-76cb-490c-90fc-c4935d5c4f2c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f87ec09cd00>]}
+2021-08-14 20:33:00.458535 (Thread-55): sending response (<Response 138 bytes [200 OK]>) to 10.0.9.228
+2021-08-14 20:33:00.492508 (MainThread): Partial parsing not enabled
+2021-08-14 20:33:00.494753 (MainThread): Parsing macros/adapters.sql
+2021-08-14 20:33:00.513156 (MainThread): Parsing macros/etc.sql
+2021-08-14 20:33:00.515158 (MainThread): Parsing macros/catalog.sql
+2021-08-14 20:33:00.520854 (MainThread): Parsing macros/materializations/copy.sql
+2021-08-14 20:33:00.524920 (MainThread): Parsing macros/materializations/table.sql
+2021-08-14 20:33:00.534558 (MainThread): Parsing macros/materializations/incremental.sql
+2021-08-14 20:33:00.545956 (MainThread): Parsing macros/materializations/seed.sql
+2021-08-14 20:33:00.548519 (MainThread): Parsing macros/materializations/snapshot.sql
+2021-08-14 20:33:00.550291 (MainThread): Parsing macros/materializations/view.sql
+2021-08-14 20:33:00.553560 (MainThread): Parsing macros/core.sql
+2021-08-14 20:33:00.557150 (MainThread): Parsing macros/materializations/helpers.sql
+2021-08-14 20:33:00.565544 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-08-14 20:33:00.578466 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-08-14 20:33:00.580187 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-08-14 20:33:00.596399 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-08-14 20:33:00.628412 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-08-14 20:33:00.633042 (MainThread): Parsing macros/materializations/view/view.sql
+2021-08-14 20:33:00.638734 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-08-14 20:33:00.657606 (MainThread): Parsing macros/materializations/table/table.sql
+2021-08-14 20:33:00.663617 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-08-14 20:33:00.665390 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-08-14 20:33:00.670873 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-08-14 20:33:00.672395 (MainThread): Parsing macros/etc/query.sql
+2021-08-14 20:33:00.673447 (MainThread): Parsing macros/etc/datetime.sql
+2021-08-14 20:33:00.681563 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-08-14 20:33:00.682494 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-08-14 20:33:00.684085 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-08-14 20:33:00.686006 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-08-14 20:33:00.687484 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-08-14 20:33:00.690018 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-08-14 20:33:00.691852 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-08-14 20:33:00.693555 (MainThread): Parsing macros/adapters/common.sql
+2021-08-14 20:33:00.739563 (MainThread): Partial parsing not enabled
+2021-08-14 20:33:00.789635 (Thread-56): handling poll request
+2021-08-14 20:33:00.789921 (Thread-56): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f9eb221c-76cb-490c-90fc-c4935d5c4f2c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f87ec17f250>]}
+2021-08-14 20:33:00.791136 (Thread-56): sending response (<Response 9620 bytes [200 OK]>) to 10.0.25.152
+2021-08-14 20:33:00.913244 (MainThread): Acquiring new bigquery connection "model.adventureworks_etl.stg_salesorderheader".
+2021-08-14 20:33:00.924255 (MainThread): Acquiring new bigquery connection "model.adventureworks_etl.stg_salesorderheadersalesreason".
+2021-08-14 20:33:00.929639 (MainThread): Acquiring new bigquery connection "model.adventureworks_etl.stg_store".
+2021-08-14 20:33:00.935218 (MainThread): Acquiring new bigquery connection "model.adventureworks_etl.stg_product".
+2021-08-14 20:33:00.940640 (MainThread): Acquiring new bigquery connection "model.adventureworks_etl.stg_salesorderdetail".
+2021-08-14 20:33:00.946299 (MainThread): Acquiring new bigquery connection "model.adventureworks_etl.stg_person".
+2021-08-14 20:33:00.951406 (MainThread): Acquiring new bigquery connection "model.adventureworks_etl.stg_salesperson".
+2021-08-14 20:33:00.956313 (MainThread): Acquiring new bigquery connection "model.adventureworks_etl.stg_customer".
+2021-08-14 20:33:00.961729 (MainThread): Acquiring new bigquery connection "model.adventureworks_etl.stg_employee".
+2021-08-14 20:33:00.966819 (MainThread): Acquiring new bigquery connection "model.adventureworks_etl.stg_salesreason".
+2021-08-14 20:33:00.971824 (MainThread): Acquiring new bigquery connection "model.adventureworks_etl.stg_salesterritory".
+2021-08-14 20:33:00.976810 (MainThread): Acquiring new bigquery connection "model.adventureworks_etl.stg_personcreditcard".
+2021-08-14 20:33:00.981754 (MainThread): Acquiring new bigquery connection "model.adventureworks_etl.dim_product".
+2021-08-14 20:33:00.986734 (MainThread): Acquiring new bigquery connection "model.adventureworks_etl.dim_store".
+2021-08-14 20:33:00.991916 (MainThread): Acquiring new bigquery connection "model.adventureworks_etl.fact_salesorderdetail".
+2021-08-14 20:33:00.999741 (MainThread): Acquiring new bigquery connection "model.adventureworks_etl.dim_salesperson".
+2021-08-14 20:33:01.004749 (MainThread): Acquiring new bigquery connection "model.adventureworks_etl.dim_person".
+2021-08-14 20:33:01.009735 (MainThread): Acquiring new bigquery connection "model.adventureworks_etl.dim_customer".
+2021-08-14 20:33:01.014473 (MainThread): Acquiring new bigquery connection "model.adventureworks_etl.dim_personcreditcard".
+2021-08-14 20:33:01.019876 (MainThread): Acquiring new bigquery connection "model.adventureworks_etl.dim_salesterritory".
+2021-08-14 20:33:01.025028 (MainThread): Acquiring new bigquery connection "model.adventureworks_etl.dim_salesreason".
+2021-08-14 20:33:01.029978 (MainThread): Acquiring new bigquery connection "model.adventureworks_etl.dim_employee".
+2021-08-14 20:33:01.044302 (MainThread): Acquiring new bigquery connection "test.adventureworks_etl.test_product_quantity".
+2021-08-14 20:33:01.049359 (MainThread): Acquiring new bigquery connection "test.adventureworks_etl.test_order_quantity".
+2021-08-14 20:33:01.362711 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'ffb24d3b-0455-4fea-989f-256861ab5650', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8ca5d7ad30>]}
+2021-08-14 20:33:01.411420 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'ffb24d3b-0455-4fea-989f-256861ab5650', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8ca175c340>]}
+2021-08-14 20:33:01.411680 (MainThread): Found 22 models, 22 tests, 0 snapshots, 0 analyses, 156 macros, 0 operations, 1 seed file, 16 sources, 0 exposures
+2021-08-14 20:33:01.413860 (MainThread): 
+2021-08-14 20:33:01.414121 (MainThread): Acquiring new bigquery connection "master".
+2021-08-14 20:33:01.414919 (ThreadPoolExecutor-0_0): Acquiring new bigquery connection "list_cursoanalytics-318700".
+2021-08-14 20:33:01.415041 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-08-14 20:33:01.594878 (ThreadPoolExecutor-1_0): Acquiring new bigquery connection "list_cursoanalytics-318700_dbt_jrgseverino".
+2021-08-14 20:33:01.595012 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2021-08-14 20:33:01.776051 (MainThread): 20:33:01 | Concurrency: 1 threads (target='default')
+2021-08-14 20:33:01.776185 (MainThread): 20:33:01 | 
+2021-08-14 20:33:01.778286 (Thread-1): Began running node seed.adventureworks_etl.stg_dates
+2021-08-14 20:33:01.778545 (Thread-1): 20:33:01 | 1 of 1 START seed file dbt_jrgseverino.stg_dates..................... [RUN]
+2021-08-14 20:33:01.778753 (Thread-1): Acquiring new bigquery connection "seed.adventureworks_etl.stg_dates".
+2021-08-14 20:33:01.778835 (Thread-1): finished collecting timing info
+2021-08-14 20:33:01.809976 (Thread-1): Opening a new connection, currently in state closed
+2021-08-14 20:33:03.001412 (Thread-57): handling poll request
+2021-08-14 20:33:03.001700 (Thread-57): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f9eb221c-76cb-490c-90fc-c4935d5c4f2c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f87ec109340>]}
+2021-08-14 20:33:03.002603 (Thread-57): sending response (<Response 13505 bytes [200 OK]>) to 10.0.33.11
+2021-08-14 20:33:05.002369 (Thread-58): handling poll request
+2021-08-14 20:33:05.002656 (Thread-58): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f9eb221c-76cb-490c-90fc-c4935d5c4f2c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f87ec126730>]}
+2021-08-14 20:33:05.003173 (Thread-58): sending response (<Response 303 bytes [200 OK]>) to 10.0.42.18
+2021-08-14 20:33:05.567827 (Thread-1): Writing runtime SQL for node "seed.adventureworks_etl.stg_dates"
+2021-08-14 20:33:05.586556 (Thread-1): finished collecting timing info
+2021-08-14 20:33:05.586893 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ffb24d3b-0455-4fea-989f-256861ab5650', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8ca15fb9a0>]}
+2021-08-14 20:33:05.587100 (Thread-1): 20:33:05 | 1 of 1 OK loaded seed file dbt_jrgseverino.stg_dates................. [INSERT 3653 in 3.81s]
+2021-08-14 20:33:05.587168 (Thread-1): Finished running node seed.adventureworks_etl.stg_dates
+2021-08-14 20:33:05.588400 (MainThread): Acquiring new bigquery connection "master".
+2021-08-14 20:33:05.588654 (MainThread): 20:33:05 | 
+2021-08-14 20:33:05.588718 (MainThread): 20:33:05 | Finished running 1 seed in 4.17s.
+2021-08-14 20:33:05.588765 (MainThread): Connection 'master' was properly closed.
+2021-08-14 20:33:05.588802 (MainThread): Connection 'seed.adventureworks_etl.stg_dates' was properly closed.
+2021-08-14 20:33:05.680587 (MainThread): 
+2021-08-14 20:33:05.680711 (MainThread): Completed successfully
+2021-08-14 20:33:05.680772 (MainThread): 
+Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+2021-08-14 20:33:07.003517 (Thread-59): handling poll request
+2021-08-14 20:33:07.003836 (Thread-59): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f9eb221c-76cb-490c-90fc-c4935d5c4f2c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f87ec126460>]}
+2021-08-14 20:33:07.027283 (Thread-59): sending response (<Response 6944 bytes [200 OK]>) to 10.0.6.250
+2021-08-14 20:33:07.698247 (Thread-60): handling status request
+2021-08-14 20:33:07.698541 (Thread-60): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f9eb221c-76cb-490c-90fc-c4935d5c4f2c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f87ec3e0a60>]}
+2021-08-14 20:33:07.699549 (Thread-60): sending response (<Response 16749 bytes [200 OK]>) to 10.0.27.22
+2021-08-14 20:33:07.769605 (Thread-61): handling status request
+2021-08-14 20:33:07.769902 (Thread-61): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f9eb221c-76cb-490c-90fc-c4935d5c4f2c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f87ec3d5550>]}
+2021-08-14 20:33:07.770851 (Thread-61): sending response (<Response 16749 bytes [200 OK]>) to 10.0.24.167
+2021-08-14 20:33:07.783679 (Thread-62): handling status request
+2021-08-14 20:33:07.783879 (Thread-62): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f9eb221c-76cb-490c-90fc-c4935d5c4f2c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f87ec3e0fd0>]}
+2021-08-14 20:33:07.784762 (Thread-62): sending response (<Response 16749 bytes [200 OK]>) to 10.0.44.74
+2021-08-14 20:37:25.870905 (Thread-63): handling status request
+2021-08-14 20:37:25.872437 (Thread-63): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f9eb221c-76cb-490c-90fc-c4935d5c4f2c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f87ec3e09d0>]}
+2021-08-14 20:37:25.873518 (Thread-63): sending response (<Response 16749 bytes [200 OK]>) to 10.0.19.71
