@@ -37,4 +37,15 @@ models:
       marts:
           materialized: table
       staging:
-          materialized: view          
+          materialized: view      
+
+seeds:
+  adventureworks_etl:
+    +enabled: true
+    +schema: 
+    # This configures data/country_codes.csv
+    stg_dates:
+      # Override column types
+      +column_types:
+        date: date
+
