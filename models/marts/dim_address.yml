@@ -1,0 +1,23 @@
+version: 2
+
+models:
+    - name: dim_address
+      description: Tabela dimensão address
+      columns:
+          - name: address_id
+            description: A chave primaria natural da tabela address
+            tests:
+                - unique
+                - not_null
+          - name: addressline1
+            description: O campo de endereco 1 da tabela address
+          - name: addressline2
+            description: O campo de endereco 2 da tabela address                                  
+          - name: city
+            description: O campo cidade da tabela address
+          - name: stateprovinceid
+            description: A chave estrangeira da tabela estado
+          - name: postalcode
+            description: O campo cep da tabela address
+          - name: spatiallocation
+            description: O campo de local espacial da tabela address                                  

@@ -101,7 +101,7 @@
             , address.city as cidade            
         from `cursoanalytics-318700`.`dbt_jrgseverino`.`stg_salesorderheader` as orderheader
         left join customer on orderheader.customerid = customer.customer_id
-        left join person on customer.customer_id = person.person_id 
+        left join person on customer.personid = person.person_id 
         left join salesperson on orderheader.salespersonid = salesperson.salesperson_id
         left join salesterritory on orderheader.territoryid = salesterritory.territory_id
         left join stateprovince on salesterritory.territory_id = stateprovince.stateprovince_id

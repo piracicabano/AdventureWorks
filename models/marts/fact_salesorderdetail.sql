@@ -59,6 +59,10 @@ with
         select *
         from {{ ref('dim_date')}}
     ),    
+    businessentityaddress as (
+        select *
+        from {{ ref('dim_businessentityaddress')}}
+    ),     
     orderheader_with_sk as(
         select
             orderheader.salesorderid
@@ -94,11 +98,12 @@ with
             , address.city as cidade            
         from {{ ref('stg_salesorderheader')}} as orderheader
         left join customer on orderheader.customerid = customer.customer_id
-        left join person on customer.customer_id = person.person_id 
+        left join person on customer.personid = person.person_id 
+        left join businessentityaddress on person.person_id = businessentityaddress.businessentity_id
+        left join address on businessentityaddress.address_id = address.address_id
         left join salesperson on orderheader.salespersonid = salesperson.salesperson_id
         left join salesterritory on orderheader.territoryid = salesterritory.territory_id
         left join stateprovince on salesterritory.territory_id = stateprovince.stateprovince_id
-        left join address on stateprovince.stateprovince_id = address.address_id
         left join countryregion on salesterritory.countryregioncode = countryregion.countryregion_id
         left join personcreditcard on orderheader.creditcardid = personcreditcard.creditcard_id
         left join creditcard on orderheader.creditcardid = creditcard.creditcard_id

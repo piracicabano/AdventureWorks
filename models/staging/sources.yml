@@ -55,4 +55,8 @@ sources:
       - name: personcreditcard
         description: Essa é a tabela que relaciona CreditCard com Person
 
+      - name: businessentityaddress
+        description: Essa é a tabela que relaciona Address com Person
+
+
                          
