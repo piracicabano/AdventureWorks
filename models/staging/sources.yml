@@ -46,6 +46,9 @@ sources:
       - name: salesterritory
         description: Essa é a tabela de territorio de vendas do ERP.    
 
+      - name: stateprovince
+        description: Essa é a tabela de estado do ERP.         
+
       - name: salesorderheadersalesreason
         description: Essa é a tabela que relaciona SalesReason com SalesOrderReason  
 

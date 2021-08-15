@@ -7,5 +7,5 @@ with
         where orderdate <= '2014-06-30'
     )
 
-select * from validation where qtde_pedidos != 121317
+select * from validation where qtde_pedidos != 131863
 )select count(*) from dbt__CTE__INTERNAL_test

@@ -10,6 +10,10 @@
         select *
         from `cursoanalytics-318700`.`dbt_jrgseverino`.`dim_customer`
     ),
+    creditcard as (
+        select *
+        from `cursoanalytics-318700`.`dbt_jrgseverino`.`dim_creditcard`
+    ),
     employee as (
         select *
         from `cursoanalytics-318700`.`dbt_jrgseverino`.`dim_employee`
@@ -34,21 +38,43 @@
         select *
         from `cursoanalytics-318700`.`dbt_jrgseverino`.`dim_salesreason`
     ),
+    salesorderheadersalesreason as (
+        select *
+        from `cursoanalytics-318700`.`dbt_jrgseverino`.`dim_salesorderheadersalesreason`
+    ),    
     salesterritory as (
         select *
         from `cursoanalytics-318700`.`dbt_jrgseverino`.`dim_salesterritory`
     ),
+    countryregion as (
+        select *
+        from `cursoanalytics-318700`.`dbt_jrgseverino`.`dim_countryregion`
+    ),    
+    stateprovince as (
+        select *
+        from `cursoanalytics-318700`.`dbt_jrgseverino`.`dim_stateprovince`
+    ),    
+    address as (
+        select *
+        from `cursoanalytics-318700`.`dbt_jrgseverino`.`dim_address`        
+    ),     
     store as (
         select *
         from `cursoanalytics-318700`.`dbt_jrgseverino`.`dim_store`
     ),
+    dates as (
+        select *
+        from `cursoanalytics-318700`.`dbt_jrgseverino`.`dim_date`
+    ),    
     orderheader_with_sk as(
         select
             orderheader.salesorderid
             , customer_sk as customer_fk
             , salesperson_sk as salesperson_fk
+            , creditcard.creditcard_sk as creditcard_fk
             , territory_sk as territory_fk
-            , creditcard_sk as creditcard_fk
+            , countryregion.countryregion_id as countryregion_fk
+            , countryregion.pais
             , orderheader.billtoaddressid
             , orderheader.shiptoaddressid
             , orderheader.shipmethodid
@@ -66,11 +92,25 @@
             , orderheader.taxamt
             , orderheader.freight
             , orderheader.totaldue
+            , person.firstname 
+            , person.lastname
+            , creditcard.cardtype               
+            , salesreason.name as motivo_venda  
+            , salesreason.reasontype            
+            , stateprovince.name as estado      
+            , address.city as cidade            
         from `cursoanalytics-318700`.`dbt_jrgseverino`.`stg_salesorderheader` as orderheader
         left join customer on orderheader.customerid = customer.customer_id
+        left join person on customer.customer_id = person.person_id 
         left join salesperson on orderheader.salespersonid = salesperson.salesperson_id
         left join salesterritory on orderheader.territoryid = salesterritory.territory_id
+        left join stateprovince on salesterritory.territory_id = stateprovince.stateprovince_id
+        left join address on stateprovince.stateprovince_id = address.address_id
+        left join countryregion on salesterritory.countryregioncode = countryregion.countryregion_id
         left join personcreditcard on orderheader.creditcardid = personcreditcard.creditcard_id
+        left join creditcard on orderheader.creditcardid = creditcard.creditcard_id
+        left join salesorderheadersalesreason on orderheader.salesorderid = salesorderheadersalesreason.salesorder_id
+        left join salesreason on salesorderheadersalesreason.salesreason_id = salesreason.salesreason_id
     )
     , orderdetail_with_sk as(
         select
@@ -79,6 +119,7 @@
             , orderdetail.carriertrackingnumber
             , orderdetail.orderqty
             , product.product_sk as product_fk
+            , product.name as product
             , orderdetail.specialofferid
             , orderdetail.unitprice
             , orderdetail.unitpricediscount      
@@ -91,6 +132,7 @@
             , orderdetail_with_sk.salesorderid
             , orderheader_with_sk.customer_fk
             , orderdetail_with_sk.product_fk
+            , orderdetail_with_sk.product as produto
             , orderheader_with_sk.salesperson_fk
             , orderheader_with_sk.territory_fk
             , orderheader_with_sk.creditcard_fk
@@ -116,6 +158,14 @@
             , orderdetail_with_sk.specialofferid
             , orderdetail_with_sk.unitprice
             , orderdetail_with_sk.unitpricediscount 
+            , concat(orderheader_with_sk.firstname," ",orderheader_with_sk.lastname) as cliente
+            , orderheader_with_sk.cardtype
+            , orderheader_with_sk.motivo_venda
+            , orderheader_with_sk.reasontype
+            , orderheader_with_sk.countryregion_fk
+            , orderheader_with_sk.pais
+            , orderheader_with_sk.estado
+            , orderheader_with_sk.cidade
             from orderheader_with_sk
             left join orderdetail_with_sk on orderheader_with_sk.salesorderid = orderdetail_with_sk.salesorderid
     )

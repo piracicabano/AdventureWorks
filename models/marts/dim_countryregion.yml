@@ -1,0 +1,12 @@
+version: 2
+
+models:
+    - name: dim_countryregion
+      description: Tabela dimensão countryregion
+      columns:
+          - name: countryregion_id
+            description: A chave natural da tabela countryregion
+            tests:
+                - not_null
+          - name: pais
+            description: É o nome do pais

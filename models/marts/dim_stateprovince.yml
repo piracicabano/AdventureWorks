@@ -1,0 +1,21 @@
+version: 2
+
+models:
+    - name: dim_stateprovince
+      description: Tabela dimensão stateprovince
+      columns:
+          - name: stateprovince_sk
+            description: A chave surrogate da tabela estado
+            tests:
+                - unique
+                - not_null
+          - name: stateprovince_id
+            description: É a chave natural da tabela estado
+          - name: stateprovincecode
+            description: É o codigo do estado
+          - name: countryregioncode
+            description: É a chave estrangeira do código do país
+          - name: name
+            description: É o nome do estado
+          - name: territoryid
+            description: É o É a chave estrangeira do territorio

@@ -1,0 +1,21 @@
+version: 2
+
+models:
+    - name: dim_creditcard
+      description: Tabela dimensão creditcard
+      columns:
+          - name: creditcard_sk
+            description: A chave surrogate da tabela creditcard
+            tests:
+                - unique
+                - not_null
+          - name: creditcard_id
+            description: A chave natural da tabela creditcard
+          - name: cardtype
+            description: O tipo do cartão na tabela creditcard
+          - name: cardnumber
+            description: O numero do cartão na tabela creditcard
+          - name: expmonth
+            description: O mês de expiração na tabela creditcard
+          - name: expyear
+            description: O ano de expiração na tabela creditcard

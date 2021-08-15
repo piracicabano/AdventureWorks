@@ -1,0 +1,10 @@
+version: 2
+
+models:
+    - name: dim_date
+      description: Tabela dimensão date
+      columns:
+          - name: date
+            description: A chave primaria da tabela date
+            tests:
+                - unique
