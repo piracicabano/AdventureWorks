@@ -80,7 +80,14 @@ with
             , orderheader.orderdate
             , orderheader.duedate
             , orderheader.shipdate
-            , orderheader.status
+            , case
+                    when orderheader.status = 1 Then 'In Process'
+                    when orderheader.status = 2 Then 'Approved'
+                    when orderheader.status = 3 Then 'Backordered'
+                    when orderheader.status = 4 Then 'Rejected'
+                    when orderheader.status = 5 Then 'Shipped'
+                    when orderheader.status = 6 Then 'Cancelled'
+                end as status
             , orderheader.onlineorderflag
             , orderheader.purchaseordernumber
             , orderheader.accountnumber
@@ -168,3 +175,4 @@ with
             left join orderdetail_with_sk on orderheader_with_sk.salesorderid = orderdetail_with_sk.salesorderid
     )
     select * from final
+    
